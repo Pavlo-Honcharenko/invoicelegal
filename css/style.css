@@ -335,13 +335,19 @@ textarea {
   border: 1px solid #e3e5ed;
   border-radius: 4px;
   padding: 13px 20px;
-  font-weight: 500
+  font-weight: 500;
+  outline: 0
 }
 input {
   border: 1px solid #e3e5ed;
   border-radius: 4px;
   padding: 13px 20px;
-  font-weight: 500
+  font-weight: 500;
+  outline: 0
+}
+input:focus,
+textarea:focus {
+  border-color: #7715cd
 }
 .color-picker-wrapper {
   position: relative;
