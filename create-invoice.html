@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240917163519">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240917194008">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -117,11 +117,11 @@
 								<div class="form-row mb-30">
 									<div class="form-row__col">
 										<div class="form-row__label">Invoice Number</div>
-										<input autocomplete="off" type="text" name="invoice-number" data-error="Error" placeholder="" class="input" value="INV001">
+										<input autocomplete="off" type="text" name="invoice-number" placeholder="" class="input" value="INV001">
 									</div>
 									<div class="form-row__col">
 										<div class="form-row__label">Date</div>
-										<input autocomplete="off" type="date" name="invoice-date" data-error="Error" placeholder="" class="input" value="19.02.2023">
+										<input autocomplete="off" type="date" name="invoice-date" placeholder="" class="input" value="19.02.2023">
 									</div>
 								</div>
 
@@ -136,18 +136,18 @@
 									</div>
 									<div class="form-row__col">
 										<div class="form-row__label">Rate per Hour</div>
-										<input autocomplete="off" type="text" name="invoice-rate-hour" data-error="Error" placeholder="" class="input" value="">
+										<input autocomplete="off" type="text" name="invoice-rate-hour" placeholder="" class="input" value="">
 									</div>
 								</div>
 
 								<div class="form-row">
 									<div class="form-row__col">
 										<div class="form-row__label">Rate per Day</div>
-										<input autocomplete="off" type="text" name="invoice-rate-day" data-error="Error" placeholder="" class="input" value="R 50.00">
+										<input autocomplete="off" type="text" name="invoice-rate-day" placeholder="" class="input" value="R 50.00">
 									</div>
 									<div class="form-row__col">
 										<div class="form-row__label">Matter/Subject</div>
-										<input autocomplete="off" type="text" name="invoice-matter" data-error="Error" placeholder="" class="input" value="">
+										<input autocomplete="off" type="text" name="invoice-matter" placeholder="" class="input" value="">
 									</div>
 								</div>
 
@@ -167,22 +167,22 @@
 									<tbody>
 										<tr id="row1">
 											<td>
-												<input autocomplete="off" type="date" name="invoice-date" data-error="Error" class="input" value="">
+												<input id="datepicker1" type="text" name="invoice-date" class="input" value="">
 											</td>
 											<td>
 												<textarea name="invoice-description" cols="25" rows="4" placeholder="State work done"></textarea>
 											</td>
 											<td>
-												<input autocomplete="off" type="time" name="invoice-time" data-error="Error" class="input" value="">
+												<input autocomplete="off" type="time" name="invoice-time" class="input text-align-right" value="">
 											</td>
 											<td>
-												<input autocomplete="off" type="text" name="invoice-amount" data-error="Error" placeholder="0" class="input">
+												<input autocomplete="off" type="text" name="invoice-amount" placeholder="0" class="input text-align-right">
 											</td>
 											<td>
-												<input autocomplete="off" type="text" name="invoice-total" data-error="Error" placeholder="0" class="input">
+												<input autocomplete="off" type="text" name="invoice-total" placeholder="0" class="input text-align-right">
 											</td>
 											<td>
-												<input data-error="Error" class="checkbox__input" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
+												<input class="checkbox__input" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
 												<label class="checkbox__label" for="invoice-checkbox"></label>
 											</td>
 										</tr>
@@ -191,24 +191,6 @@
 
 								<table class="table table-create-invoice table-mobile">
 									<tbody>
-										<tr>
-											<td>
-												<div class="table__date">
-													11.05.2014
-												</div>
-												<div class="table__description">
-													Consulting
-												</div>
-											</td>
-											<td>
-												<div class="table__amount">
-													R 200.00
-												</div>
-												<div class="table__total">
-													1.0 × R 200.00
-												</div>
-											</td>
-										</tr>
 
 										<tr>
 											<td>
@@ -264,7 +246,7 @@
 								<div class="form-row form-row-details">
 									<div class="form-row__col">
 										<div class="form-row__label">Banking Details</div>
-										<input autocomplete="off" type="text" name="banking-details" data-error="Error" placeholder="Enter Banking Details" class="input">
+										<input autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input">
 									</div>
 									<div class="form-row__col">
 										<div class="add-note">
@@ -347,7 +329,7 @@
 				</div>
 
 				<div class="popup__body">
-					<input autocomplete="off" type="text" name="setTarget" data-error="Error" placeholder="" class="input" value="R ">
+					<input autocomplete="off" type="text" name="setTarget" placeholder="" class="input" value="R ">
 					<div class="blue-button mt-20 to-left mob-to-center">Save</div>
 				</div>
 			</div>
@@ -392,8 +374,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20240917163519"></script>
-
+	<script src="js/app.min.js?_v=20240917194008"></script>
 </body>
 
 </html>
