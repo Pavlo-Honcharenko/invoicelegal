@@ -98,14 +98,14 @@ body {
 }
 [class*=__container] {
   width: 100%;
-  max-width: 94.5rem;
+  max-width: 92.5rem;
   margin: 0 auto;
   padding: 0 .9375rem
 }
 [class*="--gc"] {
   display: grid;
   min-width: 0;
-  grid-template-columns: .9375rem 1fr minmax(auto,92.625rem) 1fr .9375rem
+  grid-template-columns: .9375rem 1fr minmax(auto,90.625rem) 1fr .9375rem
 }
 [class*="--gc"]>* {
   min-width: 0;
@@ -526,6 +526,24 @@ p {
 }
 .menu-item__more-links {
   cursor: pointer
+}
+.more-menu-items {
+  min-width: 315px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
+  border-radius: 4px
+}
+.more-menu-items .menu-item {
+  padding-left: 10px;
+  padding-right: 10px
+}
+.more-menu-items a {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: 100%
+}
+.more-menu-items img {
+  display: block
 }
 .current-menu-item {
   background-color: #485d6b
@@ -1208,10 +1226,19 @@ p {
   line-height: 120%!important
 }
 @media (min-width:64.06125em) {
+  .more-menu-items .menu-item:not(:last-child) a {
+    border-bottom: .5px solid #f7f7f7
+  }
+  .more-menu-items a {
+    padding: 13px 18px 13px 18px
+  }
+  .more-menu-items img {
+    margin-right: 20px
+  }
   .more-menu-items {
     position: absolute;
     top: 100%;
-    left: -10px;
+    left: -73px;
     background-color: #29353d;
     padding: 10px;
     height: 20px;
@@ -1240,7 +1267,7 @@ p {
     opacity: 1
   }
 }
-@media (min-width:94.5em) {
+@media (min-width:92.5em) {
   .main-title__title {
     font-size: 1.75rem
   }
@@ -1305,7 +1332,7 @@ p {
     font-size: 1rem
   }
 }
-@media (max-width:94.5em) {
+@media (max-width:92.5em) {
   .content__col--narrow {
     flex: 0 0 350px
   }
@@ -1763,23 +1790,23 @@ p {
     font-size: 12px
   }
 }
-@media (min-width:20em)and (max-width:94.5em) {
+@media (min-width:20em)and (max-width:92.5em) {
   .main-title__title {
-    font-size: clamp(1rem ,.7986577181rem + 1.0067114094vw ,1.75rem)
+    font-size: clamp(1rem ,.7931034483rem + 1.0344827586vw ,1.75rem)
   }
   .top-line__title {
-    font-size: clamp(1rem ,.8657718121rem + .6711409396vw ,1.5rem)
+    font-size: clamp(1rem ,.8620689655rem + .6896551724vw ,1.5rem)
   }
   .top-line__amount {
-    font-size: clamp(1rem ,.8657718121rem + .6711409396vw ,1.5rem)
+    font-size: clamp(1rem ,.8620689655rem + .6896551724vw ,1.5rem)
   }
   .content-block-2__title {
-    font-size: clamp(1rem ,.8657718121rem + .6711409396vw ,1.5rem)
+    font-size: clamp(1rem ,.8620689655rem + .6896551724vw ,1.5rem)
   }
   .content-block-2__subtitle {
-    font-size: clamp(1.25rem ,1.182885906rem + .3355704698vw ,1.5rem)
+    font-size: clamp(1.25rem ,1.1810344828rem + .3448275862vw ,1.5rem)
   }
   .content-block-4__title {
-    font-size: clamp(1rem ,.8657718121rem + .6711409396vw ,1.5rem)
+    font-size: clamp(1rem ,.8620689655rem + .6896551724vw ,1.5rem)
   }
 }
