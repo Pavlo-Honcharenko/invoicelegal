@@ -121,6 +121,9 @@ body {
   margin-right: auto;
   z-index: 1
 }
+.menu-open .icon-menu--open {
+  z-index: 0
+}
 body::after {
   content: "";
   background-color: rgba(0,0,0,.5);
@@ -668,7 +671,7 @@ p {
   margin-bottom: 24px
 }
 .statistic__col {
-  flex: 0 1 50%;
+  flex: 0 1 55%;
   display: flex;
   align-items: center;
   gap: 18px;
@@ -677,6 +680,7 @@ p {
   line-height: 141%
 }
 .statistic__col--right {
+  flex: 0 1 45%;
   justify-content: flex-end
 }
 .item-1__color,
@@ -684,6 +688,7 @@ p {
 .item-3__color,
 .item-4__color {
   width: 19px;
+  flex: 0 0 19px;
   height: 19px;
   border-radius: 50%
 }
@@ -725,7 +730,15 @@ p {
 .content-block-2__bottom-row {
   display: flex;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
+  margin: 0 -20px 0 0;
+  width: calc(100% + 20px)
+}
+.content-block-2__bottom-row .select_form {
+  padding: 0 25px 0 0
+}
+.content-block-2__bottom-row .select__content {
+  white-space: nowrap
 }
 .content-block-2__col {
   flex: 0 1 50%
@@ -766,9 +779,16 @@ p {
   border-bottom: 1px solid #f7f7f7
 }
 .content-block-4 .content-block-4__bottom-row {
-  width: 100%;
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
+  margin: 0 -20px 0 0;
+  width: calc(100% + 20px)
+}
+.content-block-4 .content-block-4__bottom-row .select_form {
+  padding: 0 25px 0 0
+}
+.content-block-4 .content-block-4__bottom-row .select__content {
+  white-space: nowrap
 }
 .five-clients {
   margin-bottom: 15px
@@ -1088,7 +1108,8 @@ p {
 .create-invoice-buttons {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  gap: 15px
 }
 .create-invoice-buttons .grey-button {
   background-color: #757575
@@ -1528,7 +1549,7 @@ p {
     flex: 1 1 100%
   }
   .blue-button {
-    padding: 11px 20px;
+    padding: 13px 20px;
     font-size: 14px
   }
   .blue-button.new-row {
@@ -1544,8 +1565,17 @@ p {
   .blue-border {
     border-top: 8px solid #7715cd
   }
+  .header__container {
+    gap: 35px
+  }
+  .menu-header__right-col {
+    gap: 30px
+  }
   .content-block {
     padding: 25px 20px 20px
+  }
+  .top-line__title {
+    margin-top: 5px
   }
   .content-block-1 .top-line {
     flex-direction: column
@@ -1567,6 +1597,9 @@ p {
   }
   .content-block-1 .total {
     font-size: 16px
+  }
+  .statistic__row {
+    gap: 10px
   }
   .set-target {
     font-size: 16px
@@ -1660,6 +1693,19 @@ p {
   .select__content {
     font-size: 15px!important
   }
+  .header__container {
+    gap: 30px
+  }
+  .header__logo {
+    width: 100px;
+    height: 59px
+  }
+  .header__logo img {
+    width: 100%
+  }
+  .menu-header__right-col {
+    gap: 20px
+  }
   .content-block {
     padding: 20px 12px
   }
@@ -1686,6 +1732,9 @@ p {
   .content-block-3 .top-line .top-line__amount {
     flex: 0 0 100%;
     padding-top: 20px
+  }
+  .view-all {
+    padding: 0 10px 0 0
   }
   .diagram2__number {
     font-size: 30px
