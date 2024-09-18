@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240918085711">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240918164252">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -121,7 +121,8 @@
 									</div>
 									<div class="form-row__col">
 										<div class="form-row__label">Date</div>
-										<input autocomplete="off" type="date" name="invoice-date" placeholder="" class="input" value="19.02.2023">
+										<input type="text" name="invoice-date" class="input datepicker" value="" placeholder="19.02.2023">
+										<!-- <input autocomplete="off" type="date" name="invoice-date" placeholder="" class="input" value="19.02.2023"> -->
 									</div>
 								</div>
 
@@ -167,13 +168,13 @@
 									<tbody>
 										<tr id="row1">
 											<td>
-												<input id="datepicker" type="text" name="invoice-date" class="input" value="" placeholder="Enter">
+												<input type="text" name="invoice-date" class="input datepicker" value="" placeholder="Enter">
 											</td>
 											<td>
 												<textarea name="invoice-description" cols="25" rows="4" placeholder="State work done"></textarea>
 											</td>
 											<td>
-												<input type="text" name="invoice-time" id="timePick" class="input text-align-right" value="09:00">
+												<input type="text" name="invoice-time" class="input text-align-right" value="09:00">
 											</td>
 											<td>
 												<input autocomplete="off" type="text" name="invoice-amount" placeholder="0" class="input text-align-right">
@@ -384,7 +385,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20240918085711"></script>
+	<script src="js/app.min.js?_v=20240918164252"></script>
 </body>
 
 </html>

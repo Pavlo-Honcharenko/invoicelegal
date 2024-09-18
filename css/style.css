@@ -1862,8 +1862,9 @@ body.the-datepicker-page {
   border-radius: 50%!important;
   color: #fff
 }
-#datepicker {
-  background: url(../img/icon-calendar.svg) 90% 12px no-repeat
+.datepicker {
+  background: url(../img/icon-calendar.svg) calc(100% - 12px) 12px no-repeat;
+  min-width: 100px
 }
 @media (min-width:37.5em) {
   body.the-datepicker-page {
