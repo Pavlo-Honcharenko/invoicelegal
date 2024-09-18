@@ -883,6 +883,54 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
+    const moreLinks = document.querySelector(".menu-item__more-links");
+    if (moreLinks) moreLinks.addEventListener("click", (function() {
+        const parent = this.closest(".menu-item");
+        if (parent) parent.classList.toggle("_open");
+    }));
+    const newRow = document.querySelector(".new-row");
+    if (newRow) newRow.addEventListener("click", (function() {
+        const parent = this.closest(".new-row-wrapper");
+        if (parent) parent.classList.toggle("_open");
+    }));
+    document.addEventListener("DOMContentLoaded", (function() {
+        const values = document.querySelectorAll(".diagram1-value");
+        const diagramElement = document.getElementById("diagram1");
+        if (values.length > 0 && diagramElement) {
+            const amounts = Array.from(values).map((el => parseFloat(el.textContent.replace(/,/g, ""))));
+            const total = amounts.reduce(((sum, current) => sum + current), 0);
+            const percentages = amounts.map((amount => amount / total * 100));
+            let gradientStops = [];
+            let accumulatedPercentage = 0;
+            const colors = [ "#15a1cd", "#156acd", "#15cdac", "#7715CD" ];
+            percentages.forEach(((percentage, index) => {
+                const start = accumulatedPercentage;
+                const end = accumulatedPercentage + percentage;
+                gradientStops.push(`${colors[index]} ${start.toFixed(2)}% ${end.toFixed(2)}%`);
+                accumulatedPercentage += percentage;
+            }));
+            const gradientStyle = `conic-gradient(${gradientStops.join(", ")})`;
+            diagramElement.style.background = gradientStyle;
+        }
+    }));
+    document.addEventListener("DOMContentLoaded", (function() {
+        const percentageElement = document.querySelector(".diagram2__number");
+        const diagramElement = document.getElementById("diagram2");
+        if (percentageElement && diagramElement) {
+            const percentage = parseFloat(percentageElement.textContent.replace("%", ""));
+            const validPercentage = Math.min(Math.max(percentage, 0), 100);
+            const startPoint = 0;
+            const endPoint = validPercentage / 2;
+            const gradientStyle = `conic-gradient(#0000FF ${startPoint}% ${endPoint}%, #ADD8E6 ${endPoint}% 100%)`;
+            diagramElement.style.background = gradientStyle;
+        }
+    }));
+    const colorPicker = document.getElementById("colorPicker");
+    const placeholder = document.querySelector(".color-placeholder");
+    if (colorPicker) colorPicker.addEventListener("input", (function() {
+        placeholder.style.backgroundColor = colorPicker.value;
+        colorPicker.classList.add("selected");
+    }));
     (function(TheDatepicker) {
         var ClassNameType;
         (function(ClassNameType) {
@@ -4325,52 +4373,9 @@
         }();
         TheDatepicker.ViewModel_ = ViewModel_;
     })(TheDatepicker || (TheDatepicker = {}));
-    const input = document.getElementById("datepicker1");
+    const input = document.getElementById("datepicker");
     const datepicker = new TheDatepicker.Datepicker(input);
     datepicker.render();
-    const moreLinks = document.querySelector(".menu-item__more-links");
-    if (moreLinks) moreLinks.addEventListener("click", (function() {
-        const parent = this.closest(".menu-item");
-        if (parent) parent.classList.toggle("_open");
-    }));
-    document.addEventListener("DOMContentLoaded", (function() {
-        const values = document.querySelectorAll(".diagram1-value");
-        const diagramElement = document.getElementById("diagram1");
-        if (values.length > 0 && diagramElement) {
-            const amounts = Array.from(values).map((el => parseFloat(el.textContent.replace(/,/g, ""))));
-            const total = amounts.reduce(((sum, current) => sum + current), 0);
-            const percentages = amounts.map((amount => amount / total * 100));
-            let gradientStops = [];
-            let accumulatedPercentage = 0;
-            const colors = [ "#15a1cd", "#156acd", "#15cdac", "#7715CD" ];
-            percentages.forEach(((percentage, index) => {
-                const start = accumulatedPercentage;
-                const end = accumulatedPercentage + percentage;
-                gradientStops.push(`${colors[index]} ${start.toFixed(2)}% ${end.toFixed(2)}%`);
-                accumulatedPercentage += percentage;
-            }));
-            const gradientStyle = `conic-gradient(${gradientStops.join(", ")})`;
-            diagramElement.style.background = gradientStyle;
-        }
-    }));
-    document.addEventListener("DOMContentLoaded", (function() {
-        const percentageElement = document.querySelector(".diagram2__number");
-        const diagramElement = document.getElementById("diagram2");
-        if (percentageElement && diagramElement) {
-            const percentage = parseFloat(percentageElement.textContent.replace("%", ""));
-            const validPercentage = Math.min(Math.max(percentage, 0), 100);
-            const startPoint = 0;
-            const endPoint = validPercentage / 2;
-            const gradientStyle = `conic-gradient(#0000FF ${startPoint}% ${endPoint}%, #ADD8E6 ${endPoint}% 100%)`;
-            diagramElement.style.background = gradientStyle;
-        }
-    }));
-    const colorPicker = document.getElementById("colorPicker");
-    const placeholder = document.querySelector(".color-placeholder");
-    if (colorPicker) colorPicker.addEventListener("input", (function() {
-        placeholder.style.backgroundColor = colorPicker.value;
-        colorPicker.classList.add("selected");
-    }));
     window["FLS"] = false;
     menuInit();
 })();

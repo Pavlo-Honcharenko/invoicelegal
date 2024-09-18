@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240917194008">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240918081954">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -167,7 +167,7 @@
 									<tbody>
 										<tr id="row1">
 											<td>
-												<input id="datepicker1" type="text" name="invoice-date" class="input" value="">
+												<input id="datepicker" type="text" name="invoice-date" class="input" value="" placeholder="Enter">
 											</td>
 											<td>
 												<textarea name="invoice-description" cols="25" rows="4" placeholder="State work done"></textarea>
@@ -215,7 +215,17 @@
 
 								<div class="grey-line mt-30 mb-30"></div>
 
-								<div class="blue-button new-row"><img src="img/icon-plus.svg" alt=""> <span>New Row</span></div>
+								<div class="new-row-wrapper">
+									<div class="blue-button new-row"><img src="img/icon-plus.svg" alt=""> <span>New Row</span></div>
+									<div class="new-row__items-wrapper">
+										<div class="new-row__items">
+											<div class="new-row__item">Time Based Billing</div>
+											<div class="new-row__item">Fixed amount Billing</div>
+											<div class="new-row__item">Date 1 to Date 2 Billing</div>
+											<div class="new-row__item">Expense/Disbursement</div>
+										</div>
+									</div>
+								</div>
 
 								<div class="grey-line mt-30 mb-30"></div>
 
@@ -374,7 +384,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20240917194008"></script>
+	<script src="js/app.min.js?_v=20240918081954"></script>
 </body>
 
 </html>

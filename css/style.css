@@ -98,14 +98,14 @@ body {
 }
 [class*=__container] {
   width: 100%;
-  max-width: 92.5rem;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 0 .9375rem
 }
 [class*="--gc"] {
   display: grid;
   min-width: 0;
-  grid-template-columns: .9375rem 1fr minmax(auto,90.625rem) 1fr .9375rem
+  grid-template-columns: .9375rem 1fr minmax(auto,78.125rem) 1fr .9375rem
 }
 [class*="--gc"]>* {
   min-width: 0;
@@ -345,6 +345,9 @@ input {
   font-weight: 500;
   outline: 0
 }
+td input {
+  padding: 11px 20px
+}
 input:focus,
 textarea:focus {
   border-color: #7715cd
@@ -434,11 +437,6 @@ textarea:focus {
   width: fit-content;
   gap: 8px;
   cursor: pointer
-}
-.blue-button.new-row {
-  font-weight: 600;
-  font-size: 14px;
-  padding: 9px 14px
 }
 .mt-20 {
   margin-top: 20px
@@ -1043,7 +1041,13 @@ p {
 .table-create-invoice td,
 .table-create-invoice th {
   text-align: left;
-  padding: 14px
+  padding: 14px 7px
+}
+.table-create-invoice td input,
+.table-create-invoice td textarea,
+.table-create-invoice th input,
+.table-create-invoice th textarea {
+  padding: 11px 13px
 }
 .table-create-invoice.table-mobile {
   font-weight: 500;
@@ -1233,6 +1237,47 @@ p {
   margin-bottom: 16px;
   font-size: 15px!important;
   line-height: 120%!important
+}
+.blue-button.new-row {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 9px 14px
+}
+.new-row__items-wrapper {
+  padding: 0;
+  overflow: hidden;
+  margin-top: 8px
+}
+.new-row__items {
+  background-color: #7715cd;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
+  border-radius: 4px;
+  width: 215px;
+  padding: 7px 0;
+  opacity: .5;
+  -webkit-transform: translate(0,-100vh);
+  transform: translate(0,-100vh);
+  transition: all .3s ease 0s
+}
+.new-row__item {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px 14px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  color: #fff;
+  cursor: pointer
+}
+.new-row__item:not(:last-child) {
+  border-bottom: .5px solid #f7f7f7
+}
+.new-row-wrapper._open .new-row__items {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 body.the-datepicker-page {
   overflow: hidden
@@ -1694,7 +1739,10 @@ body.the-datepicker-page {
   }
 }
 .the-datepicker__deselect-button {
-  font-size: 20px
+  font-weight: 600!important;
+  font-size: 20px;
+  left: -13px!important;
+  top: -4px!important
 }
 .the-datepicker__container {
   width: auto;
@@ -1796,6 +1844,9 @@ body.the-datepicker-page {
   border-radius: 50%!important;
   color: #fff
 }
+#datepicker {
+  background: url(../img/icon-calendar.svg) 90% 12px no-repeat
+}
 @media (min-width:37.5em) {
   body.the-datepicker-page {
     overflow: auto
@@ -1861,7 +1912,7 @@ body.the-datepicker-page {
     opacity: 1
   }
 }
-@media (min-width:92.5em) {
+@media (min-width:80em) {
   .main-title__title {
     font-size: 1.75rem
   }
@@ -1895,6 +1946,11 @@ body.the-datepicker-page {
     flex-direction: column
   }
 }
+@media (max-width:80em) {
+  .content__col--narrow {
+    flex: 0 0 350px
+  }
+}
 @media (max-width:993px) {
   .content__blocks {
     display: block
@@ -1924,11 +1980,6 @@ body.the-datepicker-page {
   }
   .content-block-4__title {
     font-size: 1rem
-  }
-}
-@media (max-width:92.5em) {
-  .content__col--narrow {
-    flex: 0 0 350px
   }
 }
 @media (max-width:64.06125em) {
@@ -2173,9 +2224,6 @@ body.the-datepicker-page {
     padding: 13px 20px;
     font-size: 14px
   }
-  .blue-button.new-row {
-    width: 100%
-  }
   .mob-to-center {
     margin-left: auto;
     margin-right: auto
@@ -2301,6 +2349,9 @@ body.the-datepicker-page {
   .details__row a {
     font-size: 11px
   }
+  .blue-button.new-row {
+    width: 100%
+  }
 }
 @media (max-width:29.99875em) {
   .main-title__container {
@@ -2384,23 +2435,23 @@ body.the-datepicker-page {
     font-size: 12px
   }
 }
-@media (min-width:20em)and (max-width:92.5em) {
+@media (min-width:20em)and (max-width:80em) {
   .main-title__title {
-    font-size: clamp(1rem ,.7931034483rem + 1.0344827586vw ,1.75rem)
+    font-size: clamp(1rem ,.75rem + 1.25vw ,1.75rem)
   }
   .top-line__title {
-    font-size: clamp(1rem ,.8620689655rem + .6896551724vw ,1.5rem)
+    font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
   }
   .top-line__amount {
-    font-size: clamp(1rem ,.8620689655rem + .6896551724vw ,1.5rem)
+    font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
   }
   .content-block-2__title {
-    font-size: clamp(1rem ,.8620689655rem + .6896551724vw ,1.5rem)
+    font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
   }
   .content-block-2__subtitle {
-    font-size: clamp(1.25rem ,1.1810344828rem + .3448275862vw ,1.5rem)
+    font-size: clamp(1.25rem ,1.1666666667rem + .4166666667vw ,1.5rem)
   }
   .content-block-4__title {
-    font-size: clamp(1rem ,.8620689655rem + .6896551724vw ,1.5rem)
+    font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
   }
 }
