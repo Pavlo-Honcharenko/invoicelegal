@@ -1246,7 +1246,9 @@ p {
 .new-row__items-wrapper {
   padding: 0;
   overflow: hidden;
-  margin-top: 8px
+  margin-top: 8px;
+  height: 0;
+  position: absolute
 }
 .new-row__items {
   background-color: #7715cd;
@@ -1278,6 +1280,9 @@ p {
   opacity: 1;
   -webkit-transform: translate(0,0);
   transform: translate(0,0)
+}
+.new-row-wrapper._open .new-row__items-wrapper {
+  height: auto
 }
 .TimePick_POPUP .second {
   display: none
