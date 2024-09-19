@@ -494,8 +494,11 @@ p {
 }
 .header__logo {
   display: block;
-  width: 122px;
-  height: 72px
+  width: 120px;
+  height: 70px
+}
+.header__logo img {
+  width: 100%
 }
 .menu-header {
   display: flex;
@@ -620,10 +623,10 @@ p {
   flex: 1 1 100%
 }
 .content__col--narrow {
-  flex: 0 0 380px
+  flex: 0 0 320px
 }
 .content-block {
-  padding: 40px 40px 30px;
+  padding: 40px 30px 30px;
   background-color: #fff;
   border-radius: 4px
 }
@@ -1302,6 +1305,22 @@ p {
   right: 13px!important;
   margin: 0!important
 }
+.table-create-invoice td {
+  min-width: 90px
+}
+.table-create-invoice td:last-child {
+  min-width: initial
+}
+.table-create-invoice td.table-create-invoice-textarea {
+  width: 50%;
+  min-width: 50%!important
+}
+.table-create-invoice td:first-child {
+  padding-left: 0
+}
+.table-create-invoice td:last-child {
+  padding-right: 0
+}
 body.the-datepicker-page {
   overflow: hidden
 }
@@ -1957,7 +1976,11 @@ body.the-datepicker-page {
   }
 }
 @media (min-width:1400px) {
-  [class*=__container] {
+  .page {
+    padding-left: 10.4%;
+    padding-right: 10.4%
+  }
+  .header {
     padding-left: 10.4%;
     padding-right: 10.4%
   }
@@ -1965,9 +1988,6 @@ body.the-datepicker-page {
 @media (max-width:1300px) {
   .content__col {
     gap: 24px
-  }
-  .content__col--narrow {
-    flex: 0 0 320px
   }
   .content-block {
     padding: 30px 30px 20px
@@ -2005,11 +2025,6 @@ body.the-datepicker-page {
   }
   .content-block-4__title {
     font-size: 1rem
-  }
-}
-@media (max-width:94.375em) {
-  .content__col--narrow {
-    flex: 0 0 350px
   }
 }
 @media (max-width:64.06125em) {
@@ -2401,9 +2416,6 @@ body.the-datepicker-page {
   .header__logo {
     width: 100px;
     height: 59px
-  }
-  .header__logo img {
-    width: 100%
   }
   .menu-header__right-col {
     gap: 20px
