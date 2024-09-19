@@ -98,14 +98,14 @@ body {
 }
 [class*=__container] {
   width: 100%;
-  max-width: 80rem;
+  max-width: 94.375rem;
   margin: 0 auto;
   padding: 0 .9375rem
 }
 [class*="--gc"] {
   display: grid;
   min-width: 0;
-  grid-template-columns: .9375rem 1fr minmax(auto,78.125rem) 1fr .9375rem
+  grid-template-columns: .9375rem 1fr minmax(auto,92.5rem) 1fr .9375rem
 }
 [class*="--gc"]>* {
   min-width: 0;
@@ -1936,7 +1936,7 @@ body.the-datepicker-page {
     opacity: 1
   }
 }
-@media (min-width:80em) {
+@media (min-width:94.375em) {
   .main-title__title {
     font-size: 1.75rem
   }
@@ -1956,6 +1956,12 @@ body.the-datepicker-page {
     font-size: 1.5rem
   }
 }
+@media (min-width:1400px) {
+  [class*=__container] {
+    padding-left: 10.4%;
+    padding-right: 10.4%
+  }
+}
 @media (max-width:1300px) {
   .content__col {
     gap: 24px
@@ -1968,11 +1974,6 @@ body.the-datepicker-page {
   }
   .content-block-1__row {
     flex-direction: column
-  }
-}
-@media (max-width:80em) {
-  .content__col--narrow {
-    flex: 0 0 350px
   }
 }
 @media (max-width:993px) {
@@ -2004,6 +2005,11 @@ body.the-datepicker-page {
   }
   .content-block-4__title {
     font-size: 1rem
+  }
+}
+@media (max-width:94.375em) {
+  .content__col--narrow {
+    flex: 0 0 350px
   }
 }
 @media (max-width:64.06125em) {
@@ -2459,23 +2465,23 @@ body.the-datepicker-page {
     font-size: 12px
   }
 }
-@media (min-width:20em)and (max-width:80em) {
+@media (min-width:20em)and (max-width:94.375em) {
   .main-title__title {
-    font-size: clamp(1rem ,.75rem + 1.25vw ,1.75rem)
+    font-size: clamp(1rem ,.7983193277rem + 1.0084033613vw ,1.75rem)
   }
   .top-line__title {
-    font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
+    font-size: clamp(1rem ,.8655462185rem + .6722689076vw ,1.5rem)
   }
   .top-line__amount {
-    font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
+    font-size: clamp(1rem ,.8655462185rem + .6722689076vw ,1.5rem)
   }
   .content-block-2__title {
-    font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
+    font-size: clamp(1rem ,.8655462185rem + .6722689076vw ,1.5rem)
   }
   .content-block-2__subtitle {
-    font-size: clamp(1.25rem ,1.1666666667rem + .4166666667vw ,1.5rem)
+    font-size: clamp(1.25rem ,1.1827731092rem + .3361344538vw ,1.5rem)
   }
   .content-block-4__title {
-    font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
+    font-size: clamp(1rem ,.8655462185rem + .6722689076vw ,1.5rem)
   }
 }
