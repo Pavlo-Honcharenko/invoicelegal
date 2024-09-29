@@ -2095,12 +2095,12 @@ body.the-datepicker-page {
 }
 @media (min-width:1800px) {
   .page {
-    padding-left: 12%;
-    padding-right: 12%
+    padding-left: 13%;
+    padding-right: 13%
   }
   .header {
-    padding-left: 12%;
-    padding-right: 12%
+    padding-left: 13%;
+    padding-right: 13%
   }
 }
 @media (max-width:1300px) {
