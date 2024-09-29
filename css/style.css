@@ -2093,6 +2093,16 @@ body.the-datepicker-page {
     padding-right: 9.4%
   }
 }
+@media (min-width:1800px) {
+  .page {
+    padding-left: 12%;
+    padding-right: 12%
+  }
+  .header {
+    padding-left: 12%;
+    padding-right: 12%
+  }
+}
 @media (max-width:1300px) {
   .content__col {
     gap: 24px
