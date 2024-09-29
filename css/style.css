@@ -600,7 +600,7 @@ p {
 }
 .header__logo {
   display: block;
-  width: 120px;
+  width: 115px;
   height: 70px
 }
 .header__logo img {
@@ -2085,12 +2085,12 @@ body.the-datepicker-page {
 }
 @media (min-width:1400px) {
   .page {
-    padding-left: 10.4%;
-    padding-right: 10.4%
+    padding-left: 9.4%;
+    padding-right: 9.4%
   }
   .header {
-    padding-left: 10.4%;
-    padding-right: 10.4%
+    padding-left: 9.4%;
+    padding-right: 9.4%
   }
 }
 @media (max-width:1300px) {
