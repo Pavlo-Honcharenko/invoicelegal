@@ -336,13 +336,16 @@ body::after {
   -o-object-fit: contain;
   object-fit: contain
 }
+html {
+  font-size: 80%
+}
 .page {
-  padding-top: 100px;
-  padding-bottom: 100px
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem
 }
 .main-title__container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   position: relative
 }
 .main-title__title {
@@ -356,17 +359,17 @@ body::after {
 .select_form {
   position: relative;
   font-weight: 500!important;
-  font-size: 17px!important;
+  font-size: 1.0625rem!important;
   line-height: 141%;
   color: #485d6b!important
 }
 .select-mini .select_form {
   border: 1px solid #e3e5ed;
-  border-radius: 4px;
-  padding: 4px 12px 1px
+  border-radius: .25rem;
+  padding: .25rem .75rem 1px
 }
 .select-mini .select__title {
-  width: calc(100% - 15px)
+  width: calc(100% - .9375rem)
 }
 .select-mini .select__options {
   margin-left: -12px;
@@ -586,8 +589,8 @@ p {
 }
 .header {
   background-color: #29353d;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: .875rem;
+  padding-bottom: .875rem;
   position: fixed;
   width: 100%;
   z-index: 5
@@ -596,12 +599,12 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px
+  gap: 2.5rem
 }
 .header__logo {
   display: block;
-  width: 115px;
-  height: 70px
+  width: 7.1875rem;
+  height: 4.375rem
 }
 .header__logo img {
   width: 100%
@@ -610,25 +613,25 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px
+  gap: 2.5rem
 }
 .menu-header__right-col {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px
+  gap: 2.5rem
 }
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px
+  gap: 1.5rem
 }
 .menu-item {
-  padding: 7px 14px;
-  border-radius: 8px;
+  padding: .4375rem .875rem;
+  border-radius: .5rem;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 133%;
   text-align: center;
   color: #fff;
@@ -644,13 +647,13 @@ p {
   cursor: pointer
 }
 .more-menu-items {
-  min-width: 315px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
-  border-radius: 4px
+  min-width: 19.6875rem;
+  box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,.1);
+  border-radius: .25rem
 }
 .more-menu-items .menu-item {
-  padding-left: 10px;
-  padding-right: 10px
+  padding-left: .625rem;
+  padding-right: .625rem
 }
 .more-menu-items a {
   display: flex;
@@ -670,23 +673,23 @@ p {
   align-items: center
 }
 .notitfications img {
-  margin-top: 18px
+  margin-top: 1.125rem
 }
 .notitfications span {
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
   margin-left: -4px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  min-width: 26px;
-  height: 26px;
+  min-width: 1.625rem;
+  height: 1.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #7715cd;
-  padding: 3px;
+  padding: .1875rem;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 133%;
   text-align: center;
   border-radius: 50%;
@@ -698,8 +701,8 @@ p {
 .user-button {
   overflow: hidden;
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   position: relative;
   border: 1px solid #fff;
   cursor: pointer
@@ -713,28 +716,28 @@ p {
 }
 .content__blocks {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
   width: 100%
 }
 .content {
   display: flex;
-  gap: 30px
+  gap: 1.875rem
 }
 .content__col {
   display: flex;
   flex-direction: column;
-  gap: 30px
+  gap: 1.875rem
 }
 .content__col--wide {
   flex: 1 1 100%
 }
 .content__col--narrow {
-  flex: 0 0 320px
+  flex: 0 0 20rem
 }
 .content-block {
-  padding: 40px 30px 30px;
+  padding: 2.5rem 1.875rem 1.875rem;
   background-color: #fff;
-  border-radius: 4px
+  border-radius: .25rem
 }
 .top-line {
   display: flex;
@@ -747,15 +750,15 @@ p {
   color: #485d6b
 }
 .top-line__select {
-  margin-left: 30px;
+  margin-left: 1.875rem;
   margin-right: auto
 }
 .top-line__select .select_form {
   border: 1px solid #e3e5ed;
-  border-radius: 4px
+  border-radius: .25rem
 }
 .top-line__select .select__title {
-  margin: 5px 10px 5px 10px
+  margin: .3125rem .625rem .3125rem .625rem
 }
 .top-line__amount {
   font-weight: 600;
@@ -768,22 +771,22 @@ p {
   background-color: #7715cd;
   gap: 8px;
   border-radius: 4px;
-  padding: 18px 25px
+  padding: 1.125rem 1.5625rem
 }
 .button-create-invoice img {
   display: block;
-  width: 24px;
-  height: 24px
+  width: 1.5rem;
+  height: 1.5rem
 }
 .button-create-invoice span {
   font-weight: 600;
-  font-size: 14px;
+  font-size: .875rem;
   line-height: 171%;
   color: #fff
 }
 .content-block-1__row {
   display: flex;
-  gap: 30px
+  gap: 1.875rem
 }
 .content-block-1__col--left {
   flex: 0 1 33%
@@ -799,18 +802,18 @@ p {
 }
 .statistic__row {
   display: flex;
-  gap: 20px
+  gap: 1.25rem
 }
 .statistic__row:not(:last-child) {
-  margin-bottom: 24px
+  margin-bottom: 1.5rem
 }
 .statistic__col {
   flex: 0 1 55%;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 1.125rem;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 141%
 }
 .statistic__col--right {
@@ -821,9 +824,9 @@ p {
 .item-2__color,
 .item-3__color,
 .item-4__color {
-  width: 19px;
-  flex: 0 0 19px;
-  height: 19px;
+  width: 1.1875rem;
+  flex: 0 0 1.1875rem;
+  height: 1.1875rem;
   border-radius: 50%
 }
 .item-1__color {
@@ -839,23 +842,23 @@ p {
   background-color: #7715cd
 }
 .total {
-  padding-top: 6px;
+  padding-top: .375rem;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 120%
 }
 .content-block-2__title {
   font-weight: 700;
   line-height: 100%;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: #485d6b
 }
 .content-block-2__subtitle {
   font-weight: 600;
   line-height: 100%;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: #485d6b
 }
 .content-block-2__diagram img {
@@ -865,11 +868,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 -20px 0 0;
-  width: calc(100% + 20px)
+  margin: 0 -1.25rem 0 0;
+  width: calc(100% + 1.25rem)
 }
 .content-block-2__bottom-row .select_form {
-  padding: 0 25px 0 0
+  padding: 0 1.5625rem 0 0
 }
 .content-block-2__bottom-row .select__content {
   white-space: nowrap
@@ -883,24 +886,24 @@ p {
 }
 .set-target {
   display: block;
-  padding: 0 0 5px;
-  font-size: 18px;
+  padding: 0 0 .3125rem;
+  font-size: 1.125rem;
   font-weight: 500;
   cursor: pointer
 }
 .content-block-3 .top-line {
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
   border-bottom: 1px solid #e3e5ed;
-  margin-bottom: 30px
+  margin-bottom: 1.875rem
 }
 .content-block-3__bottom-row {
-  padding-top: 15px;
+  padding-top: .9375rem;
   display: flex;
   justify-content: flex-end
 }
 .view-all {
   font-weight: 500;
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%;
   color: #485d6b
 }
@@ -910,28 +913,28 @@ p {
   text-align: center;
   margin-bottom: 30px;
   color: #485d6b;
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
   border-bottom: 1px solid #f7f7f7
 }
 .content-block-4 .content-block-4__bottom-row {
   display: flex;
   justify-content: flex-end;
-  margin: 0 -20px 0 0;
-  width: calc(100% + 20px)
+  margin: 0 -1.25rem 0 0;
+  width: calc(100% + 1.25rem)
 }
 .content-block-4 .content-block-4__bottom-row .select_form {
-  padding: 0 25px 0 0
+  padding: 0 1.5625rem 0 0
 }
 .content-block-4 .content-block-4__bottom-row .select__content {
   white-space: nowrap
 }
 .five-clients {
-  margin-bottom: 15px
+  margin-bottom: .9375rem
 }
 .five-clients__client {
   display: flex;
   align-items: center;
-  gap: 14px
+  gap: .875rem
 }
 .five-clients__client:not(:last-child) {
   margin-bottom: 60px
@@ -2026,18 +2029,18 @@ body.the-datepicker-page {
     border-bottom: .5px solid #f7f7f7
   }
   .more-menu-items a {
-    padding: 13px 18px 13px 18px
+    padding: .8125rem 1.125rem
   }
   .more-menu-items img {
-    margin-right: 20px
+    margin-right: 1.25rem
   }
   .more-menu-items {
     position: absolute;
     top: 100%;
-    left: -73px;
+    left: -4.5625rem;
     background-color: #29353d;
-    padding: 10px;
-    height: 20px;
+    padding: .625rem;
+    height: 1.25rem;
     overflow: hidden
   }
   .more-menu-items .menu-item {
@@ -2105,10 +2108,10 @@ body.the-datepicker-page {
 }
 @media (max-width:1300px) {
   .content__col {
-    gap: 24px
+    gap: 1.5rem
   }
   .content-block {
-    padding: 30px 30px 20px
+    padding: 1.875rem 1.875rem 1.25rem
   }
   .content-block-1__row {
     flex-direction: column
@@ -2122,7 +2125,7 @@ body.the-datepicker-page {
     display: block
   }
   .content-block {
-    margin-bottom: 24px
+    margin-bottom: 1.5rem
   }
 }
 @media (max-width:20em) {
@@ -2314,34 +2317,34 @@ body.the-datepicker-page {
     margin-bottom: 50px
   }
   .main-title__container {
-    padding-top: 35px;
-    padding-bottom: 35px
+    padding-top: 2.1875rem;
+    padding-bottom: 2.1875rem
   }
   .menu-item img {
-    margin-right: 14px;
+    margin-right: .875rem;
     display: block
   }
   .drafts-count {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    min-width: 26px;
-    height: 26px;
+    min-width: 1.625rem;
+    height: 1.625rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #7715cd;
-    padding: 3px;
+    padding: .1875rem;
     font-weight: 500;
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 133%;
     text-align: center;
     border-radius: 50%;
     color: #fff;
-    margin-left: 10px
+    margin-left: .625rem
   }
   .set-target {
-    font-size: 17px
+    font-size: 1.0625rem
   }
   .five-clients__client:not(:last-child) {
     margin-bottom: 40px
@@ -2365,13 +2368,13 @@ body.the-datepicker-page {
     max-width: 354px
   }
   .main-title__container {
-    padding-top: 30px;
-    padding-bottom: 30px
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem
   }
   .main-title .actions {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 1.875rem;
+    right: 1.875rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2402,46 +2405,46 @@ body.the-datepicker-page {
     border-top: 8px solid #7715cd
   }
   .header__container {
-    gap: 35px
+    gap: 2.1875rem
   }
   .menu-header__right-col {
-    gap: 30px
+    gap: 1.875rem
   }
   .content-block {
-    padding: 25px 20px 20px
+    padding: 1.5625rem 1.25rem 1.25rem
   }
   .top-line__title {
-    margin-top: 5px
+    margin-top: .3125rem
   }
   .content-block-1 .top-line {
     flex-direction: column
   }
   .content-block-1 .button-create-invoice {
     order: 1;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     margin-left: auto;
-    font-size: 14px;
-    gap: 6px;
-    padding: 7px 12px
+    font-size: .875rem;
+    gap: .375rem;
+    padding: .4375rem .75rem
   }
   .content-block-1 .top-line__title {
     order: 2;
-    margin-bottom: 30px
+    margin-bottom: 1.875rem
   }
   .content-block-1 .statistic__col {
-    font-size: 14px
+    font-size: .875rem
   }
   .content-block-1 .total {
-    font-size: 16px
+    font-size: 1rem
   }
   .statistic__row {
-    gap: 10px
+    gap: .625rem
   }
   .set-target {
-    font-size: 16px
+    font-size: 1rem
   }
   .content-block-3 .select__option {
-    font-size: 15px
+    font-size: .9375rem
   }
   .five-clients__client:not(:last-child) {
     margin-bottom: 24px
@@ -2526,34 +2529,34 @@ body.the-datepicker-page {
     flex: 0 1 165px
   }
   .main-title__container {
-    padding-top: 20px;
-    padding-bottom: 20px
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem
   }
   .main-title .actions {
-    top: 20px;
-    right: 20px
+    top: 1.25rem;
+    right: 1.25rem
   }
   .select__content {
     font-size: 15px!important
   }
   .header__container {
-    gap: 30px
+    gap: 1.875rem
   }
   .header__logo {
-    width: 100px;
-    height: 59px
+    width: 6.25rem;
+    height: 3.6875rem
   }
   .menu-header__right-col {
-    gap: 20px
+    gap: 1.25rem
   }
   .content-block {
-    padding: 20px 12px
+    padding: 1.25rem .75rem
   }
   .content-block-1 .button-create-invoice {
-    font-size: 12px
+    font-size: .75rem
   }
   .set-target {
-    font-size: 15px
+    font-size: .9375rem
   }
   .content-block-3 .top-line {
     border-bottom: initial;
@@ -2567,14 +2570,14 @@ body.the-datepicker-page {
     margin-right: 0
   }
   .content-block-3 .top-line .top-line__select .select__option {
-    font-size: 15px
+    font-size: .9375rem
   }
   .content-block-3 .top-line .top-line__amount {
     flex: 0 0 100%;
-    padding-top: 20px
+    padding-top: 1.25rem
   }
   .view-all {
-    padding: 0 10px 0 0
+    padding: 0 .625rem 0 0
   }
   .diagram2__number {
     font-size: 30px
