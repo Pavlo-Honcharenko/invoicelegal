@@ -200,13 +200,13 @@ body::after {
   line-height: 120%;
   color: #fff
 }
-.popup__body {
-  background-color: #fff;
-  padding: 23px 30px
-}
 #all-actions .popup__content,
 #newtarget .popup__content {
   max-width: 460px
+}
+.popup__body {
+  background-color: #fff;
+  padding: 23px 30px
 }
 .popup__body .row {
   display: flex;
@@ -587,10 +587,10 @@ p {
   margin-bottom: .375rem
 }
 .mobile-element {
-  display: block
+  display: block!important
 }
 .pc-element {
-  display: none
+  display: none!important
 }
 .header {
   background-color: #29353d;
@@ -1465,6 +1465,26 @@ p {
 .mobile-text {
   display: none
 }
+.title-link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 160%;
+  color: #485d6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content
+}
+.title-link img {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  margin-top: -.125rem
+}
 body.the-datepicker-page {
   overflow: hidden
 }
@@ -2060,10 +2080,10 @@ body.the-datepicker-page {
 }
 @media (min-width:47.99875em) {
   .mobile-element {
-    display: none
+    display: none!important
   }
   .pc-element {
-    display: block
+    display: block!important
   }
 }
 @media (min-width:64.06125em) {
@@ -2413,6 +2433,25 @@ body.the-datepicker-page {
   #newtarget .popup__content {
     max-width: 354px
   }
+  .popup__body {
+    padding: 0
+  }
+  .popup__body .row {
+    gap: 20px
+  }
+  .popup__body .form-element-wrapper {
+    flex: 1 1 100%
+  }
+  .popup__body label {
+    font-size: 16px
+  }
+  .popup__body .buttons-wrapper {
+    gap: 20px;
+    padding-top: 15px
+  }
+  .page {
+    padding-bottom: 0
+  }
   .main-title__container {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem
@@ -2577,6 +2616,9 @@ body.the-datepicker-page {
   }
 }
 @media (max-width:29.99875em) {
+  .popup__body label {
+    font-size: 14px
+  }
   .popup__body .blue-button,
   .popup__body .grey-button {
     flex: 0 1 165px
