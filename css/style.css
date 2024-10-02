@@ -1262,6 +1262,12 @@ p {
 .create-invoice-buttons .grey-button {
   flex: 0 1 215px
 }
+.form-element-note {
+  font-weight: 500;
+  font-size: .8125rem;
+  line-height: 185%;
+  color: #757575
+}
 .top-line--invoice .top-line__col {
   min-width: 185px
 }

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241002101149">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241002130916">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -561,6 +561,63 @@
 
 
 
+	<div id="banking-details" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">
+						Banking Details
+					</div>
+					<button data-close type="button" class="popup__close">
+						<img src="img/icon-close.svg" alt="close">
+					</button>
+				</div>
+
+				<div class="popup__body">
+					<div class="row">
+						<div class="form-element-wrapper">
+							<label for="accountName">Account Name</label>
+							<input id="accountName" autocomplete="off" type="text" name="Account Name" placeholder="" class="input" value="">
+						</div>
+						<div class="form-element-wrapper">
+							<label for="bank">Bank</label>
+							<input id="bank" autocomplete="off" type="text" name="Bank" placeholder="" class="input" value="">
+						</div>
+						<div class="form-element-wrapper">
+							<label for="accountNumber">Account Number</label>
+							<input id="accountNumber" autocomplete="off" type="text" name="Account Number" placeholder="" class="input" value="">
+						</div>
+						<div class="form-element-wrapper">
+							<label for="confirmAccountNumber">Confirm Account Number</label>
+							<input id="confirmAccountNumber" autocomplete="off" type="text" name="Confirm Account Number" placeholder="" class="input" value="">
+						</div>
+						<div class="form-element-wrapper">
+							<label for="branchCode">Branch Code</label>
+							<input id="branchCode" autocomplete="off" type="text" name="Branch Code" placeholder="" class="input" value="">
+							<div class="form-element-note">(optional)</div>
+						</div>
+						<div class="form-element-wrapper">
+							<label for="reference">Reference</label>
+							<input id="reference" autocomplete="off" type="text" name="Reference" placeholder="" class="input" value="">
+						</div>
+					</div>
+					<div class="buttons-wrapper">
+						<div class="grey-button mt-20">
+							Cancel
+						</div>
+						<div class="blue-button mt-20">
+							Save
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
 	<div id="vat" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -613,7 +670,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20241002101149"></script>
+	<script src="js/app.min.js?_v=20241002130916"></script>
 </body>
 
 </html>
