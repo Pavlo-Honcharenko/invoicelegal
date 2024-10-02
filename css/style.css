@@ -1093,31 +1093,31 @@ p {
   padding: .0625rem .75rem
 }
 .choice-of-currency__select {
-  margin-bottom: 22px
+  margin-bottom: 1.375rem
 }
 .choice-of-currency__select .select__title {
   border: 1px solid #e3e5ed;
   border-radius: 4px;
   margin: 0;
-  padding: 13px 20px
+  padding: .8125rem 1.25rem
 }
 .choice-of-currency__select .select__options {
-  padding: 10px 18px 5px
+  padding: .625rem 1.125rem .3125rem
 }
 .choice-of-colour__label,
 .choice-of-currency__label {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 141%;
-  margin-bottom: 10px
+  margin-bottom: .625rem
 }
 .choice-of-colour__select {
   border: 1px solid #e3e5ed;
   border-radius: 4px;
   margin: 0;
-  padding: 13px 10px 13px 20px;
+  padding: .8125rem .625rem .8125rem 1.25rem;
   font-weight: 500;
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%;
   display: flex;
   justify-content: space-between;
@@ -1129,19 +1129,19 @@ p {
 .table-create-invoice tbody tr::after {
   content: "";
   position: absolute;
-  top: 17px;
-  right: -20px;
+  top: 1.0625rem;
+  right: -1.25rem;
   display: block;
-  width: 20px;
-  height: 20px;
-  background: url(../img/icon-close-in-circle.svg) center center no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(../img/icon-close-in-circle.svg) center center/cover no-repeat;
   cursor: pointer
 }
 .table-create-invoice td {
   vertical-align: top
 }
 .table-create-invoice textarea {
-  max-height: 90px
+  max-height: 5.625rem
 }
 .wrapper-scroll {
   overflow-x: auto;
@@ -1154,19 +1154,19 @@ p {
 .table-create-invoice td,
 .table-create-invoice th {
   text-align: left;
-  padding: 14px 7px
+  padding: .875rem .4375rem
 }
 .table-create-invoice td input,
 .table-create-invoice td textarea,
 .table-create-invoice th input,
 .table-create-invoice th textarea {
-  padding: 11px 13px
+  padding: .6875rem .8125rem
 }
 .table-create-invoice.table-mobile {
   font-weight: 500;
-  font-size: 12px;
+  font-size: .75rem;
   border-collapse: separate;
-  border-spacing: 0 10px
+  border-spacing: 0 .625rem
 }
 .table-create-invoice.table-mobile tbody tr {
   background-color: #f4f1ff;
@@ -1176,29 +1176,29 @@ p {
 }
 .table-create-invoice.table-mobile tbody tr::after {
   content: "";
-  top: 10px;
-  right: 10px;
+  top: .625rem;
+  right: .625rem;
   background: url(../img/icon-close-black.svg) 0 0 no-repeat
 }
 .table-create-invoice.table-mobile tbody tr::before {
   content: "";
   position: absolute;
   display: block;
-  height: 24px;
-  width: 24px;
-  bottom: 10px;
-  right: 10px;
+  height: 1.5rem;
+  width: 1.5rem;
+  bottom: .625rem;
+  right: .625rem;
   background: url(../img/icon-edit.svg) 0 0 no-repeat;
   cursor: pointer
 }
 .table-create-invoice.table-mobile tbody tr td {
-  padding-top: 35px;
-  padding-bottom: 35px
+  padding-top: 2.1875rem;
+  padding-bottom: 2.1875rem
 }
 .table-create-invoice.table-mobile .table__date {
   font-weight: 700;
   text-align: left!important;
-  font-size: 12px;
+  font-size: .75rem;
   justify-content: flex-start
 }
 .table-create-invoice.table-mobile .table__amount {
@@ -1217,13 +1217,13 @@ p {
   display: flex;
   gap: 150px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%
 }
 .summary__col {
   flex: 0 1 50%;
   white-space: nowrap;
-  padding: 14px
+  padding: .875rem
 }
 .summary__col--right {
   text-align: right
@@ -1232,17 +1232,17 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: .5rem;
   font-weight: 600;
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%;
   color: #7715cd;
   cursor: pointer
 }
 .created {
-  margin-top: 65px;
+  margin-top: 4.0625rem;
   font-weight: 500;
-  font-size: 14px;
+  font-size: .875rem;
   line-height: 171%;
   text-align: right
 }
@@ -1253,14 +1253,14 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px
+  gap: .9375rem
 }
 .create-invoice-buttons .grey-button {
   background-color: #757575
 }
 .create-invoice-buttons .blue-button,
 .create-invoice-buttons .grey-button {
-  flex: 0 1 215px
+  flex: 0 1 13.4375rem
 }
 .form-element-note {
   font-weight: 500;
@@ -1272,13 +1272,13 @@ p {
   min-width: 185px
 }
 .invoice-menu ul li {
-  padding: 13px 0;
+  padding: .8125rem 0;
   border-bottom: 1px solid #f7f7f7;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   font-weight: 500;
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%
 }
 .invoice-menu ul li img,
@@ -1286,20 +1286,20 @@ p {
   cursor: pointer
 }
 .invoice-info {
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%;
   font-weight: 500;
   white-space: nowrap;
-  padding-top: 15px
+  padding-top: .9375rem
 }
 .invoice-info__row {
   width: 100%;
   display: flex;
-  gap: 20px
+  gap: 1.25rem
 }
 .invoice-info__col {
   padding: 4px 0;
-  flex: 0 0 calc(50% - 10px)
+  flex: 0 0 calc(50% - .625rem)
 }
 .invoice-info bold {
   font-weight: 600
@@ -1307,30 +1307,30 @@ p {
 .invoice-row {
   width: 100%;
   display: flex;
-  gap: 30px
+  gap: 1.875rem
 }
 .invoice-row__col {
   flex: 0 1 50%;
   font-weight: 500;
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%
 }
 .invoice-row__label {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 141%;
   color: #757575;
-  margin-top: 25px;
-  margin-bottom: 10px
+  margin-top: 1.5625rem;
+  margin-bottom: .625rem
 }
 .invoice-row strong {
   font-weight: 700
 }
 .central-text {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 133%;
   text-align: center;
   color: #757575
@@ -1340,41 +1340,41 @@ p {
 }
 .details__row {
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px
+  padding-top: .625rem;
+  padding-bottom: .625rem
 }
 .details__row a {
-  padding-bottom: 12px;
+  padding-bottom: .75rem;
   font-weight: 600;
   color: #7715cd
 }
 .details__col {
   flex: 0 1 40%;
-  padding: 0 20px 0 0
+  padding: 0 1.25rem 0 0
 }
 .name {
-  margin-bottom: 16px;
-  font-size: 15px!important;
+  margin-bottom: 1rem;
+  font-size: .9375rem!important;
   line-height: 120%!important
 }
 .blue-button.new-row {
   font-weight: 600;
-  font-size: 14px;
-  padding: 9px 14px
+  font-size: .875rem;
+  padding: 9px .875rem
 }
 .new-row__items-wrapper {
   padding: 0;
   overflow: hidden;
-  margin-top: 8px;
+  margin-top: .5rem;
   height: 0;
   position: absolute
 }
 .new-row__items {
   background-color: #7715cd;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
+  box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,.1);
   border-radius: 4px;
-  width: 215px;
-  padding: 7px 0;
+  width: 13.4375rem;
+  padding: .4375rem 0;
   opacity: .5;
   -webkit-transform: translate(0,-100vh);
   transform: translate(0,-100vh);
@@ -1382,12 +1382,12 @@ p {
 }
 .new-row__item {
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
   display: flex;
   align-items: center;
-  padding: 5px 14px;
+  padding: .3125rem .875rem;
   font-weight: 500;
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%;
   color: #fff;
   cursor: pointer
@@ -1408,21 +1408,21 @@ p {
 }
 #cobwq_0 {
   opacity: 0;
-  width: 50px;
-  height: 30px;
-  -webkit-transform: translate(-25px,0);
-  transform: translate(-25px,0)
+  width: 3.125rem;
+  height: 1.875rem;
+  -webkit-transform: translate(-1.5625rem,0);
+  transform: translate(-1.5625rem,0)
 }
 .TimePick_POPUP {
   position: absolute;
-  top: calc(100% + 8px)!important;
+  top: calc(100% + .5rem)!important;
   bottom: initial!important;
   left: initial!important;
-  right: 13px!important;
+  right: .8125rem!important;
   margin: 0!important
 }
 .table-create-invoice td {
-  min-width: 90px
+  min-width: 5.625rem
 }
 .table-create-invoice td:last-child {
   min-width: initial
@@ -1436,6 +1436,16 @@ p {
 }
 .table-create-invoice td:last-child {
   padding-right: 0
+}
+#vat-step-2 {
+  display: none;
+  padding-top: 1.25rem
+}
+#vat-step-2 input {
+  margin-bottom: .9375rem
+}
+#vat-step-2._open {
+  display: block
 }
 body.the-datepicker-page {
   overflow: hidden
@@ -2004,8 +2014,8 @@ body.the-datepicker-page {
   color: #fff
 }
 .datepicker {
-  background: url(../img/icon-calendar.svg) calc(100% - 12px) 12px no-repeat;
-  min-width: 100px
+  background: url(../img/icon-calendar.svg) calc(100% - .625rem) .5625rem no-repeat;
+  min-width: 7.5rem
 }
 @media (min-width:37.5em) {
   body.the-datepicker-page {
@@ -2357,10 +2367,10 @@ body.the-datepicker-page {
   }
   .create-invoice-buttons .blue-button,
   .create-invoice-buttons .grey-button {
-    margin-bottom: 50px
+    margin-bottom: 3.125rem
   }
   .central-text {
-    font-size: 16px
+    font-size: 1rem
   }
 }
 @media (max-width:64.06125em)and (any-hover:none) {
@@ -2478,28 +2488,28 @@ body.the-datepicker-page {
     justify-content: flex-end
   }
   .wrapper-scroll {
-    margin: 0 -12px
+    margin: 0 -.75rem
   }
   .table-invoice thead {
-    font-size: 10px
+    font-size: .625rem
   }
   .table-invoice td,
   .table-invoice th {
-    font-size: 9px;
-    padding: 12px 8px!important
+    font-size: .5625rem;
+    padding: .75rem .5rem!important
   }
   .summary__row {
-    font-size: 12px;
-    gap: 20px
+    font-size: .75rem;
+    gap: 1.25rem
   }
   .summary__col {
-    padding: 10px 14px
+    padding: .625rem .875rem
   }
   .form-row-details {
     display: block
   }
   .form-row-details .form-row__col:not(:last-child) {
-    margin-bottom: 30px
+    margin-bottom: 1.875rem
   }
   .add-note {
     justify-content: flex-start
@@ -2508,22 +2518,22 @@ body.the-datepicker-page {
     text-align: center
   }
   .top-line--invoice {
-    gap: 25px
+    gap: 1.5625rem
   }
   .invoice-info {
-    font-size: 13px
+    font-size: .8125rem
   }
   .invoice-row__col {
-    font-size: 13px
+    font-size: .8125rem
   }
   .invoice-row__label {
-    font-size: 15px
+    font-size: .9375rem
   }
   .central-text {
-    font-size: 14px
+    font-size: .875rem
   }
   .details__row a {
-    font-size: 11px
+    font-size: .6875rem
   }
   .blue-button.new-row {
     width: 100%
@@ -2593,23 +2603,23 @@ body.the-datepicker-page {
     flex: 0 1 165px
   }
   .top-line--invoice .top-line__col {
-    min-width: 120px;
+    min-width: 7.5rem;
     flex: 0 1 47%
   }
   .top-line--invoice .top-line__col img {
     width: 100%
   }
   .invoice-info {
-    font-size: 12px
+    font-size: .75rem
   }
   .invoice-row__col {
-    font-size: 12px
+    font-size: .75rem
   }
   .invoice-row__label {
-    font-size: 14px
+    font-size: .875rem
   }
   .central-text {
-    font-size: 12px
+    font-size: .75rem
   }
 }
 @media (min-width:20em)and (max-width:94.375em) {

@@ -4378,6 +4378,13 @@
         const datepicker = new TheDatepicker.Datepicker(input);
         datepicker.render();
     }));
+    document.addEventListener("DOMContentLoaded", (function() {
+        var vatYesElement = document.getElementById("vat-yes");
+        if (vatYesElement) vatYesElement.addEventListener("click", (function() {
+            var vatStep2Element = document.getElementById("vat-step-2");
+            if (vatStep2Element) vatStep2Element.classList.add("_open");
+        }));
+    }));
     window["FLS"] = false;
     menuInit();
 })();

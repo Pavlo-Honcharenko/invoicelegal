@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241002130916">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241002143926">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -374,7 +374,7 @@
 
 				<div class="popup__body">
 					<input autocomplete="off" type="text" name="setTarget" placeholder="" class="input" value="R ">
-					<div class="blue-button mt-20 to-right mob-to-center">Save</div>
+					<div data-close class="blue-button mt-20 to-right mob-to-center">Save</div>
 				</div>
 			</div>
 		</div>
@@ -449,10 +449,10 @@
 						</div>
 					</div>
 					<div class="buttons-wrapper">
-						<div class="grey-button mt-20">
+						<div data-close class="grey-button mt-20">
 							Cancel
 						</div>
-						<div class="blue-button mt-20">
+						<div data-close class="blue-button mt-20">
 							Save
 						</div>
 					</div>
@@ -546,10 +546,10 @@
 						</div>
 					</div>
 					<div class="buttons-wrapper">
-						<div class="grey-button mt-20">
+						<div data-close class="grey-button mt-20">
 							Cancel
 						</div>
-						<div class="blue-button mt-20">
+						<div data-close class="blue-button mt-20">
 							Save
 						</div>
 					</div>
@@ -602,10 +602,10 @@
 						</div>
 					</div>
 					<div class="buttons-wrapper">
-						<div class="grey-button mt-20">
+						<div data-close class="grey-button mt-20">
 							Cancel
 						</div>
-						<div class="blue-button mt-20">
+						<div data-close class="blue-button mt-20">
 							Save
 						</div>
 					</div>
@@ -637,12 +637,29 @@
 
 					<div class="vat-choice-wrapper">
 						<label class="radio-label">
-							<input type="radio" name="vat" value="yes" class="radio-input"> Yes
+							<input id="vat-yes" type="radio" name="vat" value="yes" class="radio-input"> Yes
 						</label>
 
 						<label class="radio-label">
 							<input type="radio" name="vat" value="no" class="radio-input" checked> No
 						</label>
+					</div>
+
+					<div id="vat-step-2">
+						<div class="form-element-wrapper">
+							<label for="vatNumber">VAT Number</label>
+							<input id="vatNumber" autocomplete="off" type="text" name="VAT Number" placeholder="Enter Vat Number" class="input" value="">
+						</div>
+						<div class="form-element-wrapper">
+							<label for="vatPercentage">VAT Percentage</label>
+							<input id="vatPercentage" autocomplete="off" type="text" name="VAT Percentage" placeholder="%" class="input" value="">
+						</div>
+
+						<div class="buttons-wrapper">
+							<a href="/invoice-001.html" class="blue-button mt-20">
+								Save
+							</a>
+						</div>
 					</div>
 
 				</div>
@@ -670,7 +687,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20241002130916"></script>
+	<script src="js/app.min.js?_v=20241002143926"></script>
 </body>
 
 </html>
