@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241002185429">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241002202524">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -92,12 +92,56 @@
 				<div class="content__container mt-30">
 					<div class="content__blocks">
 
-						<div class="content__col content__col--wide">
+						<div class="content__col content__col--wide mobile-element">
 
 							<!-- content-block -->
 							<div class="content-block">
 
+								<div class="popup__body">
+									<div class="row">
 
+										<div class="form-element-wrapper">
+											<label for="date">Date</label>
+											<input id="date" type="text" name="invoice-date" class="input datepicker" value="" placeholder="Enter Date">
+										</div>
+
+										<div class="form-element-wrapper">
+											<label for="description">Description</label>
+											<textarea name="invoice-description" id="" cols="30" rows="5"></textarea>
+										</div>
+
+										<div class="form-element-wrapper">
+											<label for="ratePerHour">Time Spent</label>
+											<input data-popup="#enter-time-spent" type="text" name="invoice-time" class="input text-align-right" value="09:00">
+										</div>
+										<div class="form-element-wrapper">
+											<label for="rateAmount">Rate / Amount</label>
+											<input id="rateAmount" autocomplete="off" type="text" name="invoice-rate-amount" placeholder="" class="input" value="">
+										</div>
+
+										<div class="form-element-wrapper">
+											<input data-popup="#vat" class="checkbox__input" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
+											<label class="checkbox__label" for="invoice-checkbox"></label>
+											<div class="vat-label">VAT</div>
+										</div>
+
+										<div class="form-element-wrapper">
+											<label for="total">Total</label>
+											<input id="total" autocomplete="off" type="text" name="invoice-total" placeholder="" class="input" value="">
+										</div>
+
+
+
+									</div>
+									<div class="buttons-wrapper">
+										<div data-close class="grey-button mt-20 pc-element">
+											Cancel
+										</div>
+										<div data-close class="blue-button mt-20">
+											Save
+										</div>
+									</div>
+								</div>
 
 
 							</div>
@@ -443,7 +487,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20241002185429"></script>
+	<script src="js/app.min.js?_v=20241002202524"></script>
 </body>
 
 </html>

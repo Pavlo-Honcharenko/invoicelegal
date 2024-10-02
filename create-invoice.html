@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241002185429">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241002202524">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -240,8 +240,8 @@
 								<div class="grey-line mt-30 mb-30"></div>
 
 								<div class="new-row-wrapper">
-									<div class="blue-button new-row"><img src="img/icon-plus.svg" alt=""> <span class="mobile-text">Add</span><span>New Row</span></div>
-									<div class="new-row__items-wrapper">
+									<div class="blue-button new-row pc-element"><img src="img/icon-plus.svg" alt=""> <span>New Row</span></div>
+									<div class="new-row__items-wrapper pc-element">
 										<div class="new-row__items">
 											<div class="new-row__item">Time Based Billing</div>
 											<div class="new-row__item">Fixed amount Billing</div>
@@ -249,6 +249,8 @@
 											<div class="new-row__item">Expense/Disbursement</div>
 										</div>
 									</div>
+
+									<a href="enter-new-row.html" class="blue-button new-row mobile-element-flex"><img src="img/icon-plus.svg" alt=""> <span>Add New Row</span></a>
 								</div>
 
 								<div class="grey-line mt-30 mb-30"></div>
@@ -280,7 +282,12 @@
 								<div class="form-row form-row-details">
 									<div class="form-row__col">
 										<div class="form-row__label">Banking Details</div>
-										<input data-popup="#banking-details" autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input">
+										<input data-popup="#banking-details" autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input pc-element">
+										<a class="mobile-element" href="enter-client-details.html" class="button">
+											<div class="enter-details-button">
+												Enter Banking Details
+											</div>
+										</a>
 									</div>
 									<div class="form-row__col">
 										<div class="add-note">
@@ -677,7 +684,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20241002185429"></script>
+	<script src="js/app.min.js?_v=20241002202524"></script>
 </body>
 
 </html>

@@ -283,19 +283,28 @@ body::after {
 #vat .popup__content {
   max-width: 457px
 }
+#vat .vat-body__title {
+  padding-top: 10px
+}
+#vat label {
+  padding-top: 18px
+}
+.vat-body {
+  padding-bottom: 0
+}
 .vat-body__title {
   font-weight: 500;
   font-size: 22px;
   line-height: 177%;
   text-align: center;
   color: #485d6b;
-  margin-bottom: 40px
+  margin-bottom: 30px
 }
 .vat-choice-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px
+  gap: 90px
 }
 .radio-label {
   display: flex;
@@ -590,6 +599,12 @@ p {
   display: block!important
 }
 .pc-element {
+  display: none!important
+}
+.mobile-element-flex {
+  display: flex!important
+}
+.pc-element-flex {
   display: none!important
 }
 .header {
@@ -1485,6 +1500,15 @@ p {
   transform: rotate(-180deg);
   margin-top: -.125rem
 }
+.vat-label {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  color: #485d6b;
+  margin-left: 10px;
+  -webkit-transform: translate(0,-15px);
+  transform: translate(0,-15px)
+}
 body.the-datepicker-page {
   overflow: hidden
 }
@@ -2085,6 +2109,12 @@ body.the-datepicker-page {
   .pc-element {
     display: block!important
   }
+  .mobile-element-flex {
+    display: none!important
+  }
+  .pc-element-flex {
+    display: flex!important
+  }
 }
 @media (min-width:64.06125em) {
   .more-menu-items .menu-item:not(:last-child) a {
@@ -2448,6 +2478,22 @@ body.the-datepicker-page {
   .popup__body .buttons-wrapper {
     gap: 20px;
     padding-top: 15px
+  }
+  #enter-time-spent .popup__body {
+    padding: 12px 25px 0
+  }
+  #enter-time-spent .blue-button {
+    margin-bottom: 30px
+  }
+  #vat .vat-body__title {
+    font-size: 19px;
+    margin-bottom: 20px
+  }
+  #vat .vat-choice-wrapper {
+    gap: 60px
+  }
+  #vat .popup__body {
+    padding: 12px 25px 0
   }
   .page {
     padding-bottom: 0
