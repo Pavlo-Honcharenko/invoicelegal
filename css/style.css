@@ -118,7 +118,6 @@ body {
   display: none
 }
 .icon-menu--open {
-  margin-right: auto;
   z-index: 1
 }
 .menu-open .icon-menu--open {
@@ -1172,9 +1171,7 @@ p {
   font-weight: 500;
   font-size: .75rem;
   border-collapse: separate;
-  border-spacing: 0 .625rem
-}
-.table-create-invoice.table-mobile tbody tr {
+  border-spacing: 0 .625rem;
   background-color: #f4f1ff;
   border: 1px solid #e3e5ed;
   border-radius: 4px;
@@ -1184,7 +1181,7 @@ p {
   content: "";
   top: .625rem;
   right: .625rem;
-  background: url(../img/icon-close-black.svg) 0 0 no-repeat
+  background: url(../img/icon-close-black.svg) center center/cover no-repeat
 }
 .table-create-invoice.table-mobile tbody tr::before {
   content: "";
@@ -1194,12 +1191,11 @@ p {
   width: 1.5rem;
   bottom: .625rem;
   right: .625rem;
-  background: url(../img/icon-edit.svg) 0 0 no-repeat;
+  background: url(../img/icon-edit.svg) center center/cover no-repeat;
   cursor: pointer
 }
 .table-create-invoice.table-mobile tbody tr td {
-  padding-top: 2.1875rem;
-  padding-bottom: 2.1875rem
+  padding: 2.1875rem .8125rem
 }
 .table-create-invoice.table-mobile .table__date {
   font-weight: 700;
@@ -1465,6 +1461,9 @@ p {
   font-size: .75rem;
   color: #485d6b;
   background: url(../img/icon-enter-details.svg) center right 20px no-repeat
+}
+.mobile-text {
+  display: none
 }
 body.the-datepicker-page {
   overflow: hidden
@@ -2272,7 +2271,8 @@ body.the-datepicker-page {
   }
   .mobile-elements .header__logo {
     width: 81px!important;
-    height: 47px!important
+    height: 47px!important;
+    margin-left: 0
   }
   .mobile-elements .header__logo img {
     width: 81px;
@@ -2362,6 +2362,9 @@ body.the-datepicker-page {
   .main-title__container {
     padding-top: 2.1875rem;
     padding-bottom: 2.1875rem
+  }
+  .header__logo {
+    margin-left: 50px
   }
   .menu-item img {
     margin-right: .875rem;
@@ -2568,6 +2571,9 @@ body.the-datepicker-page {
   }
   .blue-button.new-row {
     width: 100%
+  }
+  .mobile-text {
+    display: inline-block
   }
 }
 @media (max-width:29.99875em) {
