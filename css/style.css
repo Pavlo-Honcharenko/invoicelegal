@@ -372,21 +372,21 @@ html {
   width: calc(100% - .9375rem)
 }
 .select-mini .select__options {
-  margin-left: -12px;
-  padding: 10px 15px 5px 22px
+  margin-left: -.75rem;
+  padding: .625rem .9375rem .3125rem 1.375rem
 }
 .select__title {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin: 5px 5px 10px 10px;
+  gap: .5rem;
+  margin: .3125rem .3125rem .625rem .625rem;
   width: 100%
 }
 .select__title::after {
   content: "";
   display: block;
-  width: 15px;
-  height: 8px;
+  width: .9375rem;
+  height: .5rem;
   background: url(../img/icon-select.svg) center center no-repeat
 }
 .select__value {
@@ -402,7 +402,7 @@ html {
 }
 .select__options {
   box-shadow: 0 6px 16px 0 rgba(0,0,0,.05);
-  padding: 10px 10px 5px;
+  padding: .625rem .625rem .3125rem;
   position: absolute;
   width: 100%;
   background-color: #fff;
@@ -410,7 +410,7 @@ html {
 }
 .select__option {
   white-space: nowrap;
-  padding: 5px 0 8px
+  padding: .3125rem 0 .5rem
 }
 .select__scroll {
   width: -webkit-min-content;
@@ -419,40 +419,40 @@ html {
 .select__content {
   font-family: Montserrat!important;
   font-weight: 500!important;
-  font-size: 17px!important;
+  font-size: 1.0625rem!important;
   line-height: 141%;
   color: #485d6b!important;
   letter-spacing: initial
 }
 .form-row {
   display: flex;
-  gap: 30px
+  gap: 1.875rem
 }
 .form-row__col {
   flex: 0 1 50%
 }
 .form-row__label {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 141%;
-  margin-bottom: 10px
+  margin-bottom: .625rem
 }
 textarea {
   border: 1px solid #e3e5ed;
   border-radius: 4px;
-  padding: 13px 20px;
+  padding: .8125rem 1.25rem;
   font-weight: 500;
   outline: 0
 }
 input {
   border: 1px solid #e3e5ed;
   border-radius: 4px;
-  padding: 13px 20px;
+  padding: .8125rem 1.25rem;
   font-weight: 500;
   outline: 0
 }
 td input {
-  padding: 11px 20px
+  padding: .6875rem 1.25rem
 }
 input:focus,
 textarea:focus {
@@ -466,7 +466,7 @@ textarea:focus {
 .color-picker-wrapper input[type=color] {
   opacity: 0;
   width: 100%;
-  height: 40px;
+  height: 2.5rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -475,10 +475,10 @@ textarea:focus {
 .color-placeholder {
   display: inline-block;
   border-radius: 4px;
-  width: 100px;
-  height: 23px;
-  font-size: 16px;
-  line-height: 20px;
+  width: 6.25rem;
+  height: 1.4375rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   cursor: pointer
@@ -496,8 +496,8 @@ textarea:focus {
 }
 .icon-colour {
   position: absolute;
-  top: -4px;
-  right: 4px;
+  top: -.25rem;
+  right: .25rem;
   pointer-events: none
 }
 .checkbox__input {
@@ -505,8 +505,8 @@ textarea:focus {
 }
 .checkbox__label {
   display: inline-block;
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   border: 1px solid #e3e5ed;
   border-radius: 4px;
   cursor: pointer;
@@ -518,10 +518,10 @@ textarea:focus {
 .checkbox__input:checked+.checkbox__label::after {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 8px;
-  width: 6px;
-  height: 12px;
+  top: .25rem;
+  left: .5rem;
+  width: .375rem;
+  height: .75rem;
   border: solid #fff;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
@@ -532,29 +532,29 @@ textarea:focus {
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   color: #fff;
   border-radius: 4px;
-  padding: 15px 40px;
+  padding: .9375rem 2.5rem;
   background-color: #7715cd;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  gap: 8px;
+  gap: .5rem;
   cursor: pointer
 }
 .mt-20 {
-  margin-top: 20px
+  margin-top: 1.25rem
 }
 .mt-30 {
-  margin-top: 30px
+  margin-top: 1.875rem
 }
 .mb-20 {
-  margin-bottom: 20px
+  margin-bottom: 1.25rem
 }
 .mb-30 {
-  margin-bottom: 30px
+  margin-bottom: 1.875rem
 }
 .to-left {
   margin-right: auto
@@ -585,7 +585,7 @@ textarea:focus {
 }
 p {
   line-height: 160%;
-  margin-bottom: 6px
+  margin-bottom: .375rem
 }
 .header {
   background-color: #29353d;
@@ -937,7 +937,7 @@ p {
   gap: .875rem
 }
 .five-clients__client:not(:last-child) {
-  margin-bottom: 60px
+  margin-bottom: 3.75rem
 }
 .five-clients__client--1 .client-circle {
   background-color: #f8d3e0;
@@ -963,24 +963,24 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   border-radius: 50%;
   font-weight: 600;
-  font-size: 15px;
+  font-size: .9375rem;
   text-align: center
 }
 .client-name {
   font-weight: 500;
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%;
   color: #757575
 }
 #diagram1 {
   background: conic-gradient(#15a1cd 25%,#156acd 25% 50%,#15cdac 50% 75%,#7715cd 75%);
   border-radius: 50%;
-  width: 260px;
-  height: 260px
+  width: 16.25rem;
+  height: 16.25rem
 }
 .diagram1 {
   position: relative;
@@ -988,10 +988,10 @@ p {
 }
 .diagram1__center-area {
   position: absolute;
-  top: 33px;
-  left: 33px;
-  width: 194px;
-  height: 194px;
+  top: 2.0625rem;
+  left: 2.0625rem;
+  width: 12.125rem;
+  height: 12.125rem;
   background-color: #fff;
   border-radius: 50%;
   z-index: 2;
@@ -1002,18 +1002,18 @@ p {
 }
 .diagram1__number {
   font-weight: 600;
-  font-size: 38px;
-  margin-bottom: 3px
+  font-size: 2.375rem;
+  margin-bottom: .1875rem
 }
 .diagram1__text {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.375rem;
   color: #757575
 }
 #diagram2 {
   border-radius: 50%;
-  width: 260px;
-  height: 260px
+  width: 16.25rem;
+  height: 16.25rem
 }
 .diagram2 {
   position: relative;
@@ -1022,10 +1022,10 @@ p {
 }
 .diagram2__center-area {
   position: absolute;
-  top: 33px;
-  left: 33px;
-  width: 194px;
-  height: 194px;
+  top: 2.0625rem;
+  left: 2.0625rem;
+  width: 12.125rem;
+  height: 12.125rem;
   background-color: #fff;
   border-radius: 50%;
   z-index: 2;
@@ -1037,10 +1037,10 @@ p {
 .diagram2__number {
   position: relative;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
-  width: 143px;
-  height: 143px;
+  width: 8.9375rem;
+  height: 8.9375rem;
   border-radius: 50%;
   background-color: #fff;
   display: flex;
@@ -1048,11 +1048,11 @@ p {
   align-items: center;
   box-shadow: 0 5px 25px 0 rgba(0,0,0,.1);
   z-index: 3;
-  margin: -70px auto 30px
+  margin: -4.375rem auto 1.875rem
 }
 .diagram2-wrapper {
-  width: 260px;
-  height: 130px;
+  width: 16.25rem;
+  height: 8.125rem;
   overflow: hidden;
   margin: 0 auto
 }
@@ -1064,17 +1064,17 @@ p {
 .table thead {
   background-color: #f1f2f6;
   font-weight: 600;
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%
 }
 .table td,
 .table th {
   text-align: left;
-  padding: 14px 14px 14px 7%
+  padding: .875rem .875rem .875rem 7%
 }
 .table td {
   font-weight: 500;
-  font-size: 15px;
+  font-size: .9375rem;
   line-height: 160%
 }
 .table tbody tr {
@@ -1087,10 +1087,10 @@ p {
   display: none
 }
 .content-block-3 .select-mini {
-  margin-top: -6px
+  margin-top: -.375rem
 }
 .content-block-3 .select-mini .select_form {
-  padding: 1px 12px
+  padding: .0625rem .75rem
 }
 .choice-of-currency__select {
   margin-bottom: 22px
@@ -2347,7 +2347,7 @@ body.the-datepicker-page {
     font-size: 1.0625rem
   }
   .five-clients__client:not(:last-child) {
-    margin-bottom: 40px
+    margin-bottom: 2.5rem
   }
   .create-invoice-buttons .blue-button,
   .create-invoice-buttons .grey-button {
@@ -2382,7 +2382,7 @@ body.the-datepicker-page {
     cursor: pointer
   }
   .select__content {
-    font-size: 16px!important
+    font-size: 1rem!important
   }
   .form-row {
     flex-wrap: wrap
@@ -2391,18 +2391,18 @@ body.the-datepicker-page {
     flex: 1 1 100%
   }
   .blue-button {
-    padding: 13px 20px;
-    font-size: 14px
+    padding: .8125rem 1.25rem;
+    font-size: .875rem
   }
   .mob-to-center {
     margin-left: auto;
     margin-right: auto
   }
   p {
-    font-size: 13px
+    font-size: .8125rem
   }
   .blue-border {
-    border-top: 8px solid #7715cd
+    border-top: .5rem solid #7715cd
   }
   .header__container {
     gap: 2.1875rem
@@ -2447,11 +2447,11 @@ body.the-datepicker-page {
     font-size: .9375rem
   }
   .five-clients__client:not(:last-child) {
-    margin-bottom: 24px
+    margin-bottom: 1.5rem
   }
   .table td,
   .table th {
-    padding: 12px 8px 12px 4%
+    padding: .75rem .5rem .75rem 4%
   }
   .table-pc {
     display: none
@@ -2460,7 +2460,7 @@ body.the-datepicker-page {
     display: table
   }
   .table-mobile td {
-    font-size: 13px
+    font-size: .8125rem
   }
   .table__client {
     font-weight: 600
@@ -2537,7 +2537,7 @@ body.the-datepicker-page {
     right: 1.25rem
   }
   .select__content {
-    font-size: 15px!important
+    font-size: .9375rem!important
   }
   .header__container {
     gap: 1.875rem
@@ -2580,7 +2580,7 @@ body.the-datepicker-page {
     padding: 0 .625rem 0 0
   }
   .diagram2__number {
-    font-size: 30px
+    font-size: 1.875rem
   }
   .create-invoice-buttons .blue-button,
   .create-invoice-buttons .grey-button {
