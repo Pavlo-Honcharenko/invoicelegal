@@ -4385,6 +4385,16 @@
             if (vatStep2Element) vatStep2Element.classList.add("_open");
         }));
     }));
+    const notificationElement = document.querySelector(".notifications");
+    if (notificationElement) notificationElement.addEventListener("click", (function() {
+        const allNotificationsElement = document.querySelector(".all-notifications");
+        if (allNotificationsElement) allNotificationsElement.classList.toggle("_open");
+    }));
+    const pageElement = document.querySelector(".page");
+    if (pageElement) pageElement.addEventListener("click", (function() {
+        const allNotificationsElement = document.querySelector(".all-notifications");
+        if (allNotificationsElement) allNotificationsElement.classList.remove("_open");
+    }));
     window["FLS"] = false;
     menuInit();
 })();

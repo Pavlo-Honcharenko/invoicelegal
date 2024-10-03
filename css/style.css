@@ -687,15 +687,17 @@ p {
 .current-menu-item {
   background-color: #485d6b
 }
-.notitfications {
+.notifications {
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  cursor: pointer;
+  position: relative
 }
-.notitfications img {
+.notifications img {
   margin-top: 1.125rem
 }
-.notitfications span {
+.notifications span {
   margin-bottom: 1.125rem;
   margin-left: -4px;
   width: -webkit-fit-content;
@@ -714,6 +716,70 @@ p {
   text-align: center;
   border-radius: 50%;
   color: #fff
+}
+.all-notifications {
+  display: none;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #fff;
+  cursor: initial;
+  position: absolute;
+  top: calc(100% - 10px);
+  right: 80px;
+  width: 370px;
+  max-width: 370px;
+  min-width: 370px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.1)
+}
+.all-notifications__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  padding-bottom: 10px
+}
+.all-notifications__title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 141%;
+  padding-bottom: 3px
+}
+.all-notifications__mark-as-read {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  white-space: nowrap;
+  color: #7715cd;
+  cursor: pointer
+}
+.all-notifications ul {
+  width: 100%
+}
+.all-notifications ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  cursor: pointer;
+  margin: 10px 0
+}
+.all-notifications ul li img {
+  margin-top: 5px
+}
+.all-notifications__text {
+  padding-top: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  color: #485d6b
+}
+.all-notifications__date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  color: #485d6b
+}
+.all-notifications._open {
+  display: block
 }
 .drafts-count {
   display: none
@@ -2689,6 +2755,15 @@ body.the-datepicker-page {
   }
   .menu-header__right-col {
     gap: 1.25rem
+  }
+  .all-notifications {
+    width: calc(100vw - 24px);
+    min-width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    right: 12px
+  }
+  .all-notifications ul {
+    min-width: 280px
   }
   .content-block {
     padding: 1.25rem .75rem
