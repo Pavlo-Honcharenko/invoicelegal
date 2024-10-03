@@ -4390,10 +4390,17 @@
         const allNotificationsElement = document.querySelector(".all-notifications");
         if (allNotificationsElement) allNotificationsElement.classList.toggle("_open");
     }));
+    const userButtoElement = document.querySelector(".user-button");
+    if (userButtoElement) userButtoElement.addEventListener("click", (function() {
+        const profileMenuElement = document.querySelector(".profile-menu");
+        if (profileMenuElement) profileMenuElement.classList.toggle("_open");
+    }));
     const pageElement = document.querySelector(".page");
     if (pageElement) pageElement.addEventListener("click", (function() {
         const allNotificationsElement = document.querySelector(".all-notifications");
+        const profileMenuElement = document.querySelector(".profile-menu");
         if (allNotificationsElement) allNotificationsElement.classList.remove("_open");
+        if (profileMenuElement) profileMenuElement.classList.remove("_open");
     }));
     window["FLS"] = false;
     menuInit();
