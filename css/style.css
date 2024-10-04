@@ -1315,6 +1315,12 @@ p {
   overflow-x: auto;
   overflow-y: hidden
 }
+.table-create-invoice.table-invoice td:first-child {
+  padding-left: 5px
+}
+.table-create-invoice.table-invoice td:last-child {
+  padding-right: 5px
+}
 .table-invoice tbody tr::after {
   content: "";
   display: none
@@ -1437,7 +1443,12 @@ p {
   color: #757575
 }
 .top-line--invoice .top-line__col {
-  min-width: 185px
+  min-width: 185px;
+  font-weight: 500
+}
+.invoice-menu {
+  margin-top: -.625rem;
+  padding-bottom: .625rem
 }
 .invoice-menu ul li {
   padding: .8125rem 0;
@@ -1667,6 +1678,26 @@ p {
   font-weight: 600;
   font-size: 14px;
   line-height: 171%
+}
+#all-actions {
+  display: none;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: initial;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 370px;
+  max-width: 370px;
+  min-width: 370px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.1)
+}
+#all-actions .invoice-menu {
+  margin-top: 0;
+  padding-bottom: 0
+}
+#all-actions._open {
+  display: block
 }
 body.the-datepicker-page {
   overflow: hidden
@@ -2262,6 +2293,9 @@ body.the-datepicker-page {
   }
 }
 @media (min-width:47.99875em) {
+  .blue-border {
+    border-top: .5rem solid #7715cd
+  }
   .mobile-element {
     display: none!important
   }
@@ -2694,9 +2728,6 @@ body.the-datepicker-page {
   p {
     font-size: .8125rem
   }
-  .blue-border {
-    border-top: .5rem solid #7715cd
-  }
   .mobile-display-none {
     display: none
   }
@@ -2780,6 +2811,12 @@ body.the-datepicker-page {
   .table-invoice th {
     font-size: .5625rem;
     padding: .75rem .5rem!important
+  }
+  .table-invoice td:first-child {
+    padding-left: 5px
+  }
+  .table-invoice td:last-child {
+    padding-right: 5px
   }
   .summary__row {
     font-size: .75rem;
@@ -2958,6 +2995,11 @@ body.the-datepicker-page {
   }
   .central-text {
     font-size: .75rem
+  }
+  #all-actions {
+    width: calc(100vw - 30px);
+    min-width: calc(100vw - 30px);
+    max-width: calc(100vw - 30px)
   }
 }
 @media (min-width:20em)and (max-width:94.375em) {

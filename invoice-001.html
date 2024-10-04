@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241004120744">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241004125502">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -178,10 +178,13 @@
 					<div class="main-title__title">
 						<h1>Invoice 001</h1>
 					</div>
-					<div class="actions" data-popup="#all-actions">
+					<div class="actions">
 						<span>Actions</span>
 						<img src="img/icon-actions.svg" alt="">
+
+						<div id="all-actions"></div>
 					</div>
+
 				</div>
 			</div>
 
@@ -395,7 +398,7 @@
 						<div class="content__col content__col--narrow">
 
 							<!-- content-block -->
-							<div class="content-block" data-da=".actions-popup__body,768,0">
+							<div class="content-block" data-da="#all-actions,768,0">
 
 								<div class="invoice-menu">
 									<ul>
@@ -466,24 +469,7 @@
 		</div>
 	</div>
 
-	<div id="all-actions" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content">
-				<div class="popup__header">
-					<div class="popup__title">
-						Actions
-					</div>
-					<button data-close type="button" class="popup__close">
-						<img src="img/icon-close.svg" alt="close">
-					</button>
-				</div>
 
-				<div class="actions-popup__body">
-
-				</div>
-			</div>
-		</div>
-	</div>
 
 
 
@@ -773,7 +759,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20241004120744"></script>
+	<script src="js/app.min.js?_v=20241004125502"></script>
 </body>
 
 </html>
