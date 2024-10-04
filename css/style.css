@@ -2727,6 +2727,9 @@ body.the-datepicker-page {
   .content-block-3 .select__option {
     font-size: .9375rem
   }
+  .content-block-4 {
+    margin-bottom: 80px
+  }
   .five-clients__client:not(:last-child) {
     margin-bottom: 1.5rem
   }
