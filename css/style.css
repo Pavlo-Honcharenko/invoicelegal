@@ -254,6 +254,7 @@ body::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
   gap: 35px
 }
 #enter-time-spent .popup__content {
@@ -381,7 +382,7 @@ html {
   width: calc(100% - .9375rem)
 }
 .select-mini .select__options {
-  top: calc(100% + 0px);
+  top: calc(100% + 1px);
   margin-left: -.75rem;
   padding: .625rem .9375rem .3125rem 1.375rem
 }
@@ -773,7 +774,8 @@ p {
   background-color: #485d6b;
   color: #fff;
   font-weight: 500;
-  font-size: 14px
+  font-size: 14px;
+  word-spacing: 8px
 }
 .upgrade-to-pro__button {
   border-radius: 4px;
@@ -1421,9 +1423,12 @@ p {
 .create-invoice-buttons .grey-button {
   background-color: #757575
 }
-.create-invoice-buttons .blue-button,
-.create-invoice-buttons .grey-button {
-  flex: 0 1 13.4375rem
+.create-invoice-buttons a {
+  flex: 0 0 13.4375rem!important
+}
+.create-invoice-buttons a .blue-button,
+.create-invoice-buttons a .grey-button {
+  width: 100%
 }
 .form-element-note {
   font-weight: 500;
@@ -1654,6 +1659,14 @@ p {
   margin-left: 10px;
   -webkit-transform: translate(0,-15px);
   transform: translate(0,-15px)
+}
+.create-invoice__title-mobile {
+  display: none;
+  padding-top: .3125rem;
+  padding-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%
 }
 body.the-datepicker-page {
   overflow: hidden
@@ -2591,8 +2604,7 @@ body.the-datepicker-page {
   .five-clients__client:not(:last-child) {
     margin-bottom: 2.5rem
   }
-  .create-invoice-buttons .blue-button,
-  .create-invoice-buttons .grey-button {
+  .create-invoice-buttons a {
     margin-bottom: 3.125rem
   }
   .central-text {
@@ -2623,7 +2635,7 @@ body.the-datepicker-page {
   }
   .popup__body .buttons-wrapper {
     gap: 20px;
-    padding-top: 15px
+    padding-top: 20px
   }
   #enter-time-spent .popup__body {
     padding: 12px 25px 0
@@ -2684,6 +2696,9 @@ body.the-datepicker-page {
   }
   .blue-border {
     border-top: .5rem solid #7715cd
+  }
+  .mobile-display-none {
+    display: none
   }
   .header__container {
     gap: 2.1875rem
@@ -2785,6 +2800,9 @@ body.the-datepicker-page {
   .created {
     text-align: center
   }
+  .create-invoice-buttons {
+    justify-content: center
+  }
   .top-line--invoice {
     gap: 1.5625rem
   }
@@ -2808,6 +2826,12 @@ body.the-datepicker-page {
   }
   .mobile-text {
     display: inline-block
+  }
+  .create-invoice__title-mobile {
+    display: block
+  }
+  .new-row-wrapper {
+    margin-top: 24px
   }
 }
 @media (max-width:29.99875em) {
@@ -2913,9 +2937,8 @@ body.the-datepicker-page {
   .diagram2__number {
     font-size: 1.875rem
   }
-  .create-invoice-buttons .blue-button,
-  .create-invoice-buttons .grey-button {
-    flex: 0 1 165px
+  .create-invoice-buttons a {
+    flex: 1 0 10.3125rem!important
   }
   .top-line--invoice .top-line__col {
     min-width: 7.5rem;
