@@ -2717,6 +2717,9 @@ body.the-datepicker-page {
   .content-block-3 .select__option {
     font-size: .9375rem
   }
+  .content-block-4 {
+    margin-bottom: 80px
+  }
   .five-clients__client:not(:last-child) {
     margin-bottom: 1.5rem
   }
@@ -2846,6 +2849,32 @@ body.the-datepicker-page {
   }
   .content-block-1 .button-create-invoice {
     font-size: .75rem
+  }
+  .content-block-2__bottom-row .select_form {
+    padding: 0 1.5625rem 0 .4375rem;
+    margin-right: 1.125rem;
+    border: 1px solid #e3e5ed;
+    border-radius: .25rem
+  }
+  .content-block-2__bottom-row .select_form .select__body {
+    margin-bottom: -.1875rem
+  }
+  .content-block-2__bottom-row .select_form .select__options {
+    left: 0;
+    top: calc(100% - 1px)
+  }
+  .select-years .select_form {
+    padding: 0 1.5625rem 0 .4375rem;
+    margin-right: 1.125rem;
+    border: 1px solid #e3e5ed;
+    border-radius: .25rem
+  }
+  .select-years .select_form .select__body {
+    margin-bottom: -.1875rem
+  }
+  .select-years .select_form .select__options {
+    left: 0;
+    top: calc(100% - 1px)
   }
   .set-target {
     font-size: .9375rem
