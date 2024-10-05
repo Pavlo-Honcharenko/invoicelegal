@@ -729,7 +729,7 @@ p {
 .profile-menu {
   display: none;
   border-radius: 4px;
-  padding: 20px 0;
+  padding: 20px;
   background-color: #fff;
   cursor: initial;
   position: absolute;
@@ -769,7 +769,7 @@ p {
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
-  margin: 10px 20px;
+  margin: 0 0 10px;
   padding: 10px 15px;
   background-color: #485d6b;
   color: #fff;
@@ -1442,6 +1442,9 @@ p {
   line-height: 185%;
   color: #757575
 }
+.top-line--invoice .name {
+  padding-top: 4px
+}
 .top-line--invoice .top-line__col {
   min-width: 185px;
   font-weight: 500
@@ -1687,9 +1690,8 @@ p {
   position: absolute;
   top: 25px;
   right: 0;
-  width: 370px;
-  max-width: 370px;
-  min-width: 370px;
+  width: 350px;
+  max-width: 350px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,.1)
 }
 #all-actions .invoice-menu {
@@ -1698,6 +1700,9 @@ p {
 }
 #all-actions._open {
   display: block
+}
+#all-actions .content-block {
+  padding: 2.5rem 2.5rem 1.875rem
 }
 body.the-datepicker-page {
   overflow: hidden
@@ -2550,7 +2555,8 @@ body.the-datepicker-page {
   .menu-header__body {
     height: 100%;
     max-height: calc(100vh - 160px);
-    overflow: scroll
+    overflow-y: scroll;
+    overflow-x: hidden
   }
   .nav-menu {
     width: -webkit-fit-content;
@@ -2879,6 +2885,9 @@ body.the-datepicker-page {
   .popup__body .grey-button {
     flex: 0 1 165px
   }
+  html {
+    font-size: 80%
+  }
   .main-title__container {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem
@@ -2904,13 +2913,13 @@ body.the-datepicker-page {
     width: calc(100vw - 24px);
     min-width: calc(100vw - 24px);
     max-width: calc(100vw - 24px);
-    right: 12px
+    right: 0
   }
   .all-notifications {
     width: calc(100vw - 24px);
     min-width: calc(100vw - 24px);
     max-width: calc(100vw - 24px);
-    right: 12px
+    right: 0
   }
   .all-notifications ul {
     min-width: 280px
