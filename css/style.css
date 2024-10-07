@@ -345,9 +345,6 @@ body::after {
   -o-object-fit: contain;
   object-fit: contain
 }
-html {
-  font-size: 80%
-}
 .page {
   padding-top: 6.25rem;
   padding-bottom: 6.25rem
@@ -2884,9 +2881,6 @@ body.the-datepicker-page {
   .popup__body .blue-button,
   .popup__body .grey-button {
     flex: 0 1 165px
-  }
-  html {
-    font-size: 80%
   }
   .main-title__container {
     padding-top: 1.25rem;
