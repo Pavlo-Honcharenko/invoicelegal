@@ -595,7 +595,7 @@ textarea:focus {
   white-space: nowrap
 }
 .text-align-right {
-  text-align: right
+  text-align: right!important
 }
 p {
   line-height: 160%;
