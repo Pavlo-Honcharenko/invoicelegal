@@ -145,7 +145,7 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 30px 10px;
+  padding: 1.875rem .625rem;
   transition: visibility .8s ease 0s;
   visibility: hidden;
   pointer-events: none
@@ -192,26 +192,26 @@ body::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 23px 30px
+  padding: 1.4375rem 1.875rem
 }
 .popup__title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 120%;
   color: #fff
 }
 #all-actions .popup__content,
 #newtarget .popup__content {
-  max-width: 460px
+  max-width: 28.75rem
 }
 .popup__body {
   background-color: #fff;
-  padding: 23px 30px
+  padding: 1.4375rem 1.875rem
 }
 .popup__body .row {
   display: flex;
   justify-content: space-between;
-  gap: 35px;
+  gap: 2.1875rem;
   flex-wrap: wrap
 }
 .popup__body .form-element-wrapper {
@@ -219,10 +219,10 @@ body::after {
 }
 .popup__body label {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 141%;
   color: #485d6b;
-  margin-bottom: 10px
+  margin-bottom: .625rem
 }
 .popup__body .grey-button {
   display: flex;
@@ -230,7 +230,7 @@ body::after {
   align-items: center;
   color: #fff;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   background-color: #bcbcbc
 }
@@ -240,13 +240,13 @@ body::after {
   align-items: center;
   color: #fff;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center
 }
 .popup__body .blue-button,
 .popup__body .grey-button {
-  flex: 0 0 215px;
-  height: 50px;
+  flex: 0 0 13.4375rem;
+  height: 3.125rem;
   border-radius: 4px;
   cursor: pointer
 }
@@ -254,11 +254,11 @@ body::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
-  gap: 35px
+  padding-top: 1.875rem;
+  gap: 2.1875rem
 }
 #enter-time-spent .popup__content {
-  width: 340px
+  width: 21.25rem
 }
 #enter-time-spent .popup__header {
   background-color: #fff
@@ -267,52 +267,52 @@ body::after {
   color: #485d6b;
   display: flex;
   align-items: center;
-  gap: 12px
+  gap: .75rem
 }
 .time-element-wrapper {
   display: flex;
   align-items: center;
-  gap: 30px
+  gap: 1.875rem
 }
 .time-element-wrapper input {
   text-align: right;
-  flex: 0 0 166px
+  flex: 0 0 10.375rem
 }
 .time-element-wrapper label {
   margin-bottom: 0
 }
 #vat .popup__content {
-  max-width: 457px
+  max-width: 28.5625rem
 }
 #vat .vat-body__title {
-  padding-top: 10px
+  padding-top: .625rem
 }
 #vat label {
-  padding-top: 18px
+  padding-top: 1.125rem
 }
 .vat-body {
-  padding-bottom: 0
+  padding-bottom: 2.5rem
 }
 .vat-body__title {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 177%;
   text-align: center;
   color: #485d6b;
-  margin-bottom: 30px
+  margin-bottom: 1.875rem
 }
 .vat-choice-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 90px
+  gap: 5.625rem
 }
 .radio-label {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: .625rem;
   font-weight: 500!important;
-  font-size: 22px!important;
+  font-size: 1.375rem!important;
   text-align: center
 }
 .radio-input {
@@ -365,7 +365,7 @@ body::after {
 .select_form {
   position: relative;
   font-weight: 500!important;
-  font-size: 1.0625rem!important;
+  font-size: .9375rem!important;
   line-height: 141%;
   color: #485d6b!important;
   background-color: #fff
@@ -403,8 +403,13 @@ body::after {
 }
 .select__options {
   font-weight: 500;
-  font-size: 13px;
-  background-color: #fff
+  font-size: .9375rem;
+  background-color: #fff;
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,.05);
+  padding: .625rem .625rem .3125rem;
+  position: absolute;
+  width: 100%;
+  border-radius: 4px
 }
 ._select-open {
   box-shadow: 0 0 6px 0 rgba(0,0,0,.05)
@@ -413,17 +418,10 @@ body::after {
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg)
 }
-.select__options {
-  box-shadow: 0 6px 16px 0 rgba(0,0,0,.05);
-  padding: .625rem .625rem .3125rem;
-  position: absolute;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 4px
-}
 .select__option {
+  font-weight: 500;
   white-space: nowrap;
-  padding: .3125rem 0 .5rem
+  padding: .8125rem 0 .5rem
 }
 .select__scroll {
   width: -webkit-min-content;
@@ -432,7 +430,7 @@ body::after {
 .select__content {
   font-family: Montserrat!important;
   font-weight: 500!important;
-  font-size: 1.0625rem!important;
+  font-size: .9375rem!important;
   line-height: 141%;
   color: #485d6b!important;
   letter-spacing: initial
@@ -618,6 +616,10 @@ p {
   padding-bottom: .875rem;
   position: fixed;
   width: 100%;
+  min-height: 6.25rem;
+  max-height: 6.25rem;
+  display: flex;
+  align-items: center;
   z-index: 5
 }
 .header__container {
@@ -1318,7 +1320,8 @@ p {
   padding-left: 5px
 }
 .table-create-invoice.table-invoice td:last-child {
-  padding-right: 5px
+  padding-right: 5px;
+  text-align: right
 }
 .table-invoice tbody tr::after {
   content: "";
@@ -1530,7 +1533,7 @@ p {
   color: #7715cd
 }
 .details__col {
-  flex: 0 1 40%;
+  flex: 0 0 45%;
   padding: 0 1.25rem 0 0
 }
 .name {
@@ -1609,8 +1612,8 @@ p {
   min-width: initial
 }
 .table-create-invoice td.table-create-invoice-textarea {
-  width: 50%;
-  min-width: 50%!important
+  width: 48%;
+  min-width: 48%!important
 }
 .table-create-invoice td:first-child {
   padding-left: 0
@@ -2270,7 +2273,7 @@ body.the-datepicker-page {
   color: #fff
 }
 .datepicker {
-  background: url(../img/icon-calendar.svg) calc(100% - .625rem) .5625rem no-repeat;
+  background: url(../img/icon-calendar.svg) calc(100% - .625rem) .8125rem no-repeat;
   min-width: 7.5rem
 }
 @media (min-width:37.5em) {
@@ -2599,11 +2602,14 @@ body.the-datepicker-page {
   }
   .popup__body .blue-button,
   .popup__body .grey-button {
-    margin-bottom: 50px
+    margin-bottom: 3.125rem
   }
   .main-title__container {
     padding-top: 2.1875rem;
     padding-bottom: 2.1875rem
+  }
+  .select__options {
+    font-size: .875rem
   }
   .form-row__label {
     font-size: 1rem
@@ -2664,39 +2670,39 @@ body.the-datepicker-page {
 @media (max-width:47.99875em) {
   #all-actions .popup__content,
   #newtarget .popup__content {
-    max-width: 354px
+    max-width: 22.125rem
   }
   .popup__body {
     padding: 0
   }
   .popup__body .row {
-    gap: 20px
+    gap: 1.25rem
   }
   .popup__body .form-element-wrapper {
     flex: 1 1 100%
   }
   .popup__body label {
-    font-size: 16px
+    font-size: 1rem
   }
   .popup__body .buttons-wrapper {
-    gap: 20px;
-    padding-top: 20px
+    gap: 1.25rem;
+    padding-top: 1.25rem
   }
   #enter-time-spent .popup__body {
-    padding: 12px 25px 0
+    padding: .75rem 1.5625rem 0
   }
   #enter-time-spent .blue-button {
-    margin-bottom: 30px
+    margin-bottom: 1.875rem
   }
   #vat .vat-body__title {
-    font-size: 19px;
-    margin-bottom: 20px
+    font-size: 1.1875rem;
+    margin-bottom: 1.25rem
   }
   #vat .vat-choice-wrapper {
-    gap: 60px
+    gap: 3.75rem
   }
   #vat .popup__body {
-    padding: 12px 25px 0
+    padding: .75rem 1.5625rem 0
   }
   .page {
     padding-bottom: 0
@@ -2715,8 +2721,11 @@ body.the-datepicker-page {
     gap: 11px;
     cursor: pointer
   }
-  .select__content {
-    font-size: 1rem!important
+  .select__options {
+    font-size: .8125rem
+  }
+  .select__option {
+    padding: .75rem 0 .5rem
   }
   .form-row {
     flex-wrap: wrap;
@@ -2745,6 +2754,10 @@ body.the-datepicker-page {
   }
   .header__container {
     gap: 2.1875rem
+  }
+  .header__logo {
+    width: 6.125rem;
+    height: 3.625rem
   }
   .menu-header__right-col {
     gap: 1.875rem
@@ -2889,11 +2902,11 @@ body.the-datepicker-page {
 }
 @media (max-width:29.99875em) {
   .popup__body label {
-    font-size: 14px
+    font-size: .875rem
   }
   .popup__body .blue-button,
   .popup__body .grey-button {
-    flex: 0 1 165px
+    flex: 0 1 10.3125rem
   }
   .main-title__container {
     padding-top: 1.25rem;
@@ -2903,8 +2916,11 @@ body.the-datepicker-page {
     top: 1.25rem;
     right: 1.25rem
   }
-  .select__content {
-    font-size: .9375rem!important
+  .select__options {
+    font-size: .75rem
+  }
+  .select__option {
+    padding: .6875rem 0 .5rem
   }
   .form-row__label {
     font-size: .875rem
@@ -2913,8 +2929,8 @@ body.the-datepicker-page {
     gap: 1.875rem
   }
   .header__logo {
-    width: 6.25rem;
-    height: 3.6875rem
+    width: 4.875rem;
+    height: 2.875rem
   }
   .menu-header__right-col {
     gap: 1.25rem
