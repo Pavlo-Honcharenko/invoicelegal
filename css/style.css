@@ -594,6 +594,9 @@ textarea:focus {
 .nowrap {
   white-space: nowrap
 }
+.text-align-right {
+  text-align: right
+}
 p {
   line-height: 160%;
   margin-bottom: .375rem
@@ -1106,7 +1109,7 @@ p {
   gap: .875rem
 }
 .five-clients__client:not(:last-child) {
-  margin-bottom: 3.75rem
+  margin-bottom: 2.5rem
 }
 .five-clients__client--1 .client-circle {
   background-color: #f8d3e0;
@@ -2651,9 +2654,6 @@ body.the-datepicker-page {
   }
   .set-target {
     font-size: 1.0625rem
-  }
-  .five-clients__client:not(:last-child) {
-    margin-bottom: 2.5rem
   }
   .create-invoice-buttons a {
     margin-bottom: 3.125rem
