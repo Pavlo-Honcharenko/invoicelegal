@@ -1632,6 +1632,9 @@ p {
 .table-create-invoice td:last-child {
   padding-right: 0
 }
+.table-create-invoice td:nth-child(2) {
+  min-width: 7.1875rem
+}
 #vat-step-2 {
   display: none;
   padding-top: 1.25rem
@@ -2914,6 +2917,9 @@ body.the-datepicker-page {
   .central-text {
     font-size: .875rem
   }
+  .details__row {
+    font-size: .8125rem
+  }
   .details__row a {
     font-size: .6875rem
   }
@@ -2936,6 +2942,16 @@ body.the-datepicker-page {
 @media (max-width:47.99875em)and (max-width:29.99875em) {
   .table-mobile td {
     font-size: .75rem
+  }
+  .table-invoice td,
+  .table-invoice th {
+    padding: .75rem .375rem!important
+  }
+  .table-invoice td:first-child {
+    padding-left: 5px!important
+  }
+  .table-invoice td:last-child {
+    padding-right: 5px!important
   }
 }
 @media (max-width:29.99875em) {
@@ -3124,8 +3140,14 @@ body.the-datepicker-page {
   .central-text {
     font-size: .75rem
   }
+  .details__row {
+    font-size: .6875rem
+  }
   .details__col {
     font-size: .6875rem
+  }
+  .table-create-invoice td {
+    min-width: 4.6875rem
   }
   #all-actions {
     width: calc(100vw - 30px);
