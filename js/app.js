@@ -4407,6 +4407,31 @@
         if (allNotificationsElement) allNotificationsElement.classList.remove("_open");
         if (profileMenuElement) profileMenuElement.classList.remove("_open");
     }));
+    document.addEventListener("DOMContentLoaded", (() => {
+        const buttonLogin = document.querySelector(".button-login");
+        const buttonSignUp = document.querySelector(".button-sign-up");
+        const forgotPassword = document.querySelector(".forgot-password");
+        const loginForm = document.getElementById("login-form");
+        const signUpForm = document.getElementById("sign-up-form");
+        const forgotPasswordForm = document.getElementById("forgot-password-form");
+        if (buttonLogin && buttonSignUp && forgotPassword && loginForm && signUpForm && forgotPasswordForm) {
+            function showForm(formToShow) {
+                loginForm.classList.add("hidden");
+                signUpForm.classList.add("hidden");
+                forgotPasswordForm.classList.add("hidden");
+                formToShow.classList.remove("hidden");
+            }
+            buttonLogin.addEventListener("click", (() => {
+                showForm(loginForm);
+            }));
+            buttonSignUp.addEventListener("click", (() => {
+                showForm(signUpForm);
+            }));
+            forgotPassword.addEventListener("click", (() => {
+                showForm(forgotPasswordForm);
+            }));
+        } else console.error("One or more elements are missing on the page.");
+    }));
     window["FLS"] = false;
     menuInit();
 })();
