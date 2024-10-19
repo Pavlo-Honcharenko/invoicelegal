@@ -374,7 +374,8 @@ body::after {
 .select-mini .select_form {
   border: 1px solid #e3e5ed;
   border-radius: .1875rem;
-  padding: .4375rem .625rem 1px
+  padding: .4375rem .625rem 1px;
+  height: 2.625rem
 }
 .select-mini .select__title {
   width: calc(100% - .8125rem)
@@ -459,9 +460,10 @@ textarea {
 input {
   border: 1px solid #e3e5ed;
   border-radius: 4px;
-  padding: .8125rem 1.0625rem;
+  padding: .6875rem 1.0625rem;
   font-weight: 500;
-  outline: 0
+  outline: 0;
+  height: 2.625rem
 }
 td input {
   padding: .5625rem 1.0625rem
@@ -508,8 +510,8 @@ textarea:focus {
 }
 .icon-colour {
   position: absolute;
-  top: -.1875rem;
-  right: .1875rem;
+  top: -.3125rem;
+  right: .125rem;
   pointer-events: none
 }
 .checkbox__input {
@@ -766,6 +768,10 @@ p {
 .profile-menu ul li:not(:last-child) {
   border-bottom: 1px solid #f7f7f7
 }
+.profile-menu ul li a.button {
+  display: flex;
+  align-items: center
+}
 .profile-menu ul li img {
   margin-right: .625rem
 }
@@ -905,7 +911,7 @@ p {
   flex: 1 1 100%
 }
 .content__col--narrow {
-  flex: 0 0 16.6875rem
+  flex: 0 0 18.75rem
 }
 .content-block {
   padding: 2.0625rem 1.5625rem 1.5625rem;
@@ -1274,6 +1280,14 @@ p {
 .table tbody tr {
   border-top: 1px solid #f1f2f6
 }
+.table.table-create-invoice.table-invoice th:first-child {
+  text-align: left;
+  padding: .75rem 1.25rem .75rem 12px
+}
+.table.table-create-invoice.table-invoice th:last-child {
+  text-align: right;
+  padding: .75rem 12px .75rem 1.25rem
+}
 .table-pc {
   display: table
 }
@@ -1342,10 +1356,10 @@ p {
   overflow-y: hidden
 }
 .table-create-invoice.table-invoice td:first-child {
-  padding-left: .25rem
+  padding-left: .625rem
 }
 .table-create-invoice.table-invoice td:last-child {
-  padding-right: .25rem;
+  padding-right: .625rem;
   text-align: right
 }
 .table-invoice tbody tr::after {
@@ -1676,7 +1690,7 @@ p {
 }
 .title-link {
   font-weight: 700;
-  font-size: .0625rem;
+  font-size: .875rem;
   line-height: 160%;
   color: #485d6b;
   display: flex;
@@ -2434,7 +2448,7 @@ body.the-datepicker-page {
 }
 @media (min-width:81.875em) {
   .main-title__title {
-    font-size: 1.75rem
+    font-size: 1.625rem
   }
 }
 @media (min-width:84.375em) {
@@ -2659,7 +2673,7 @@ body.the-datepicker-page {
     padding-bottom: 1.8125rem
   }
   .select__options {
-    font-size: .75rem
+    font-size: .8125rem
   }
   .form-row__label {
     font-size: .8125rem
@@ -2787,8 +2801,12 @@ body.the-datepicker-page {
     gap: 11px;
     cursor: pointer
   }
+  .select-mini .select_form {
+    height: 2.375rem;
+    padding: .3125rem .625rem 1px
+  }
   .select__options {
-    font-size: .6875rem
+    font-size: .75rem
   }
   .select__option {
     padding: .625rem 0 .4375rem
@@ -2803,6 +2821,10 @@ body.the-datepicker-page {
   .form-row__label {
     padding-top: .9375rem;
     font-size: .8125rem
+  }
+  input {
+    height: 2.375rem;
+    padding: .5625rem .9375rem
   }
   .blue-button {
     padding: .6875rem 1.0625rem;
@@ -2913,6 +2935,9 @@ body.the-datepicker-page {
   .table th:last-child {
     padding: .625rem 4% .625rem .9375rem
   }
+  .table.table-create-invoice.table-invoice th:first-child {
+    padding: .625rem .9375rem .625rem 12px
+  }
   .table-pc {
     display: none
   }
@@ -2935,11 +2960,11 @@ body.the-datepicker-page {
     margin: 0 -.625rem
   }
   .table-invoice thead {
-    font-size: .5rem
+    font-size: .6875rem
   }
   .table-invoice td,
   .table-invoice th {
-    font-size: .4375rem;
+    font-size: .625rem;
     padding: .625rem .4375rem!important
   }
   .table-invoice td:first-child {
@@ -3042,7 +3067,7 @@ body.the-datepicker-page {
     right: 1.0625rem
   }
   .select__options {
-    font-size: .625rem
+    font-size: .6875rem
   }
   .select__option {
     padding: .5625rem 0 .4375rem
@@ -3233,6 +3258,6 @@ body.the-datepicker-page {
 }
 @media (min-width:20em)and (max-width:81.875em) {
   .main-title__title {
-    font-size: clamp(1rem ,.7575757576rem + 1.2121212121vw ,1.75rem)
+    font-size: clamp(1rem ,.797979798rem + 1.0101010101vw ,1.625rem)
   }
 }
