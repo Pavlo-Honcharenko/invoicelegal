@@ -22,7 +22,7 @@ body {
   color: #485d6b;
   line-height: 1;
   font-family: Montserrat;
-  font-size: .9375rem;
+  font-size: .8125rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -620,6 +620,9 @@ p {
   max-width: 185px;
   max-height: 106px
 }
+.mt-minus {
+  margin-top: -9px!important
+}
 .header {
   background-color: #29353d;
   padding-top: .75rem;
@@ -931,11 +934,14 @@ p {
 }
 .top-line__select {
   margin-left: 1.5625rem;
-  margin-right: auto
+  margin-right: auto;
+  margin-top: -.625rem!important
 }
 .top-line__select .select_form {
   border: 1px solid #e3e5ed;
-  border-radius: .1875rem
+  border-radius: .1875rem;
+  display: flex;
+  align-items: center
 }
 .top-line__select .select__title {
   margin: .25rem .5rem .25rem .5rem
@@ -1124,7 +1130,7 @@ p {
   gap: .75rem
 }
 .five-clients__client:not(:last-child) {
-  margin-bottom: 2.0625rem
+  margin-bottom: 1.875rem
 }
 .five-clients__client--1 .client-circle {
   background-color: #f8d3e0;
@@ -1372,10 +1378,12 @@ p {
   padding: .75rem .375rem
 }
 .table-create-invoice td input,
-.table-create-invoice td textarea,
-.table-create-invoice th input,
-.table-create-invoice th textarea {
+.table-create-invoice th input {
   padding: .5625rem .6875rem
+}
+.table-create-invoice td textarea,
+.table-create-invoice th textarea {
+  padding: .6875rem
 }
 .table-create-invoice.table-mobile {
   font-weight: 500;
