@@ -282,7 +282,7 @@ body::after {
   margin-bottom: 0
 }
 #vat .popup__content {
-  max-width: 23.8125rem
+  max-width: 23.75rem
 }
 #vat .vat-body__title {
   padding-top: .5rem
@@ -319,6 +319,9 @@ body::after {
 .radio-input {
   -webkit-transform: scale(1.3);
   transform: scale(1.3)
+}
+#settarget .popup__content {
+  max-width: 23.75rem
 }
 .ibg {
   width: 100%;
@@ -1829,7 +1832,7 @@ body.the-datepicker-page {
   touch-action: none
 }
 .the-datepicker__main th.the-datepicker__week-day {
-  padding: .5em 0;
+  padding: .5em 0!important;
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
@@ -1944,7 +1947,7 @@ body.the-datepicker-page {
   width: 100%
 }
 .the-datepicker__main td.the-datepicker__cell {
-  padding: 0
+  padding: 0!important
 }
 .the-datepicker__main td.the-datepicker__cell a.the-datepicker__button {
   padding: .1em;
@@ -1954,7 +1957,7 @@ body.the-datepicker-page {
   display: block
 }
 .the-datepicker__main td.the-datepicker__cell a.the-datepicker__button .the-datepicker__button-content.the-datepicker__day-content {
-  padding: .6em 0
+  padding: .6em 0!important
 }
 .the-datepicker__main td.the-datepicker__cell a.the-datepicker__button .the-datepicker__button-content.the-datepicker__year-cell-content {
   padding: .755em 0
@@ -2238,12 +2241,11 @@ body.the-datepicker-page {
   padding: 0
 }
 .the-datepicker__main {
-  min-width: 340px;
-  max-width: 340px;
+  min-width: 300px;
+  max-width: 300px;
   position: relative;
   font-weight: 500;
-  font-size: 14px;
-  padding: 0 16px
+  font-size: 13px
 }
 .the-datepicker__main .the-datepicker__close {
   position: absolute;
@@ -2322,15 +2324,15 @@ body.the-datepicker-page {
   line-height: 100%
 }
 .the-datepicker__main .the-datepicker__day--button:hover .the-datepicker__button-content {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   margin-left: -2px;
   border-radius: 50%!important
 }
 .the-datepicker__main .the-datepicker__cell--selected a.the-datepicker__day--button .the-datepicker__button-content {
   background-color: #7715cd;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%!important;
   color: #fff
 }
@@ -2689,6 +2691,9 @@ body.the-datepicker-page {
   .popup__body .grey-button {
     margin-bottom: 2.625rem
   }
+  #settarget .popup__body {
+    padding: 20px 20px 0
+  }
   .main-title__container {
     padding-top: 1.8125rem;
     padding-bottom: 1.8125rem
@@ -2736,6 +2741,9 @@ body.the-datepicker-page {
   }
   .top-line__title {
     font-size: 1.0625rem
+  }
+  .top-line__select {
+    margin-top: -.75rem!important
   }
   .top-line__amount {
     font-size: 1.125rem
@@ -2893,8 +2901,12 @@ body.the-datepicker-page {
     margin: 0 auto;
     padding-top: 1.0625rem
   }
+  .top-line__select {
+    margin-top: -.4375rem!important
+  }
   .top-line__amount {
-    font-size: 1.0625rem
+    font-size: 1.0625rem;
+    margin-top: .25rem
   }
   .content-block-1 .top-line {
     flex-direction: column
@@ -2966,7 +2978,7 @@ body.the-datepicker-page {
     display: table
   }
   .table-mobile td {
-    font-size: .6875rem
+    font-size: .8125rem
   }
   .table__client {
     font-weight: 600
@@ -3058,7 +3070,7 @@ body.the-datepicker-page {
 }
 @media (max-width:47.99875em)and (max-width:29.99875em) {
   .table-mobile td {
-    font-size: .625rem
+    font-size: .75rem
   }
   .table-invoice td,
   .table-invoice th {
@@ -3137,7 +3149,7 @@ body.the-datepicker-page {
     padding: 1.0625rem .625rem
   }
   .top-line__title {
-    font-size: .75rem
+    font-size: .875rem
   }
   .top-line__title--main {
     font-size: .8125rem;
@@ -3204,7 +3216,8 @@ body.the-datepicker-page {
   }
   .content-block-3 .top-line .top-line__amount {
     flex: 0 0 100%;
-    padding-top: 1.0625rem
+    padding-top: 1.0625rem;
+    padding-right: 6px
   }
   .view-all {
     padding: 0 .5rem 0 0
@@ -3280,5 +3293,10 @@ body.the-datepicker-page {
 @media (min-width:20em)and (max-width:81.875em) {
   .main-title__title {
     font-size: clamp(1rem ,.797979798rem + 1.0101010101vw ,1.625rem)
+  }
+}
+@media (any-hover:hover) {
+  .the-datepicker__main .the-datepicker__cell--selected a.the-datepicker__day--button .the-datepicker__button-content:hover {
+    margin-left: 0
   }
 }
