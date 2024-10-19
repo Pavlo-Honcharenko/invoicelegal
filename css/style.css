@@ -1651,8 +1651,8 @@ p {
   min-width: initial
 }
 .table-create-invoice td.table-create-invoice-textarea {
-  width: 48%;
-  min-width: 48%!important
+  width: 40%;
+  min-width: 40%!important
 }
 .table-create-invoice td:first-child {
   padding-left: 0
@@ -1671,6 +1671,19 @@ p {
 }
 #vat-step-2._open {
   display: block
+}
+.table.table-create-invoice.table-pc th:first-child {
+  padding: .75rem .3125rem .75rem .75rem
+}
+.table.table-create-invoice.table-pc td:first-child {
+  padding: .75rem .3125rem .75rem 0
+}
+.table.table-create-invoice.table-pc th:last-child {
+  padding: .75rem .625rem .75rem 0
+}
+.table.table-create-invoice.table-pc td:last-child {
+  padding: .75rem .75rem .75rem .3125rem;
+  text-align: center
 }
 .enter-details-button {
   border: 1px solid #e3e5ed;
@@ -1745,7 +1758,7 @@ p {
   display: block
 }
 #all-actions .content-block {
-  padding: 2.0625rem 2.0625rem 1.5625rem
+  padding: 1.625rem 1.625rem 1.25rem
 }
 body.the-datepicker-page {
   overflow: hidden
