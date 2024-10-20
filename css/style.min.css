@@ -13,3 +13,14 @@
 		padding: 0;
 	}
 }
+
+@media (max-width: 47.9988em) {
+    .create-invoice__title-mobile {
+        display: block;
+        font-size: 14px;
+    }
+	 .blue-button.new-row {
+        width: 100%;
+		  margin-top: 24px;
+    }
+}
