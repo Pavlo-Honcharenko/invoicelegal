@@ -16,6 +16,7 @@
 
 @media (max-width: 47.9988em) {
     .create-invoice__title-mobile {
+		margin-top: 20px;
         display: block;
         font-size: 14px;
     }
