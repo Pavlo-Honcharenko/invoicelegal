@@ -3056,9 +3056,6 @@ body.the-datepicker-page {
   .details__row {
     font-size: .6875rem
   }
-  .details__row a {
-    font-size: .5625rem
-  }
   .details__col {
     font-size: .6875rem
   }
@@ -3276,9 +3273,6 @@ body.the-datepicker-page {
   }
   .central-text {
     font-size: .625rem
-  }
-  .details__row {
-    font-size: .5625rem
   }
   .details__col {
     font-size: .5625rem
